@@ -33,7 +33,7 @@
     <dependency>
       <groupId>org.cyclops.commoncapabilities</groupId>
       <artifactId>commoncapabilities-1.21.1-neoforge</artifactId>
-      <version>2.11.3-305</version>
+      <version>2.11.3-314</version>
     </dependency>
   
     <dependency>
@@ -111,7 +111,7 @@
     <dependency>
       <groupId>mekanism</groupId>
       <artifactId>Mekanism</artifactId>
-      <version>1.21.1-10.7.16.82</version>
+      <version>1.21.1-10.7.17.83</version>
       <classifier>all</classifier>
     </dependency>
     
