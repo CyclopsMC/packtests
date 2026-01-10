@@ -1,6 +1,6 @@
 ## Cyclps Pack Tests
 
-[![Build Status](https://github.com/CyclopsMC/packtests/workflows/gametests/badge.svg)](https://github.com/CyclopsMC/CyclopsCore/actions?query=workflow%3Agametests)
+[![CI](https://github.com/CyclopsMC/packtests/actions/workflows/gametests.yml/badge.svg)](https://github.com/CyclopsMC/packtests/actions/workflows/gametests.yml)
 
 Repo for testing all Cyclops mods in a production client and server environment.
 
