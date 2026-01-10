@@ -39,4 +39,4 @@ jobs:
           regex: .*${{ matrix.loader }}.*
           mc-runtime-test: ${{ matrix.loader }}
           java: ${{ env.java_version }}
-          headlessmc-command: --jvm "-Djava.awt.headless=true -DMcRuntimeGameTestMinExpectedGameTests=1"
+          headlessmc-command: --jvm "-Djava.awt.headless=true -DMcRuntimeGameTestMinExpectedGameTests=1 -Dneoforge.enabledGameTestNamespaces=cyclopscore,commoncapabilities"
