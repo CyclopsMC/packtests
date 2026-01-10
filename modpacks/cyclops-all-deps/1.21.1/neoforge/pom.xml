@@ -114,7 +114,7 @@
     <dependency>
       <groupId>dev.architectury</groupId>
       <artifactId>architectury-neoforge</artifactId>
-      <version>13.0.6</version>
+      <version>13.0.8</version>
     </dependency>
 
     <dependency>
