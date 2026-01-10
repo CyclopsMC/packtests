@@ -27,7 +27,7 @@ jobs:
           distribution: 'microsoft'
           java-version: 21
       - name: 'Fetch modpack'
-        run: ./fetch.sh modpacks/cyclops-all/${{ matrix.mc }}/${{ matrix.loader }}/pom.xml
+        run: ./fetch.sh modpacks/cyclops-all/${{ matrix.mc }}/${{ matrix.loader }}/pom.xml $(pwd)/run/mods
         env:
           GITHUB_USER: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
