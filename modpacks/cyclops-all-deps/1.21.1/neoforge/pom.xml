@@ -89,7 +89,7 @@
     <dependency>
       <groupId>com.github.glitchfiend</groupId>
       <artifactId>TerraBlender-neoforge</artifactId>
-      <version>1.21-4.0.0.1</version>
+      <version>1.21.11-21.11.0.0</version>
     </dependency>
 
     <dependency>
