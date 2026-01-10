@@ -20,14 +20,14 @@ jobs:
           distribution: 'microsoft'
           java-version: 21
       - name: 'Fetch modpack'
-        run: ./fetch.sh modpacks/cyclops-all/1.21.11/neoforge/pom.xml
+        run: ./fetch.sh modpacks/cyclops-all/1.21.1/neoforge/pom.xml
         env:
           GITHUB_USER: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: 'Test in runtime client'
         uses: headlesshq/mc-runtime-test@4.1.0
         with:
-          mc: 1.21.11
+          mc: 1.21.1
           modloader: neoforge
           regex: .*neoforge.*
           mc-runtime-test: none
