@@ -17,6 +17,7 @@ jobs:
           - 1.21.1
         loader:
           - neoforge
+          - forge
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
@@ -39,7 +40,7 @@ jobs:
           mc: ${{ matrix.mc }}
           modloader: ${{ matrix.loader }}
           regex: .*${{ matrix.loader }}.*
-          mc-runtime-test: ${{ matrix.loader }}
+          mc-runtime-test: ${{ matrix.loader == 'forge' && 'lexforge' || matrix.loader }}
           java: ${{ env.java_version }}
           headlessmc-command: --jvm "-Djava.awt.headless=true -DMcRuntimeGameTestMinExpectedGameTests=1 -Dneoforge.enabledGameTestNamespaces=cyclopscore,commoncapabilities"
       - uses: actions/upload-artifact@v6
