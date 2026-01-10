@@ -18,6 +18,12 @@ jobs:
         loader:
           - neoforge
           - forge
+          - fabric
+        include:
+          - mc: 1.21.1
+            loader: fabric
+            fabric-api: 0.116.7 #https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20&showAlphaFiles=show
+            fabric-gametest-api: 2.0.9+50ed0faf7a # https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-gametest-api-v1/
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
@@ -44,6 +50,8 @@ jobs:
           mc-runtime-test: ${{ matrix.loader == 'forge' && 'lexforge' || matrix.loader }}
           java: ${{ env.java_version }}
           headlessmc-command: --jvm "-Djava.awt.headless=true -DMcRuntimeGameTestMinExpectedGameTests=1 -Dneoforge.enabledGameTestNamespaces=cyclopscore,commoncapabilities"
+          fabric-api: ${{ matrix.fabric-api || 'none' }}
+          fabric-gametest-api: ${{ matrix.fabric-gametest-api || 'none' }}
       - uses: actions/upload-artifact@v6
         with:
           name: ${{ matrix.modpack }}-${{ matrix.mc }}-${{ matrix.loader }}-mods
