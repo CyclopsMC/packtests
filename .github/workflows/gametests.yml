@@ -16,6 +16,7 @@ jobs:
           - client
         modpack:
           - cyclops-all
+          - cyclops-id
         mc:
           - 1.21.1
         loader:
@@ -27,6 +28,11 @@ jobs:
             loader: fabric
             fabric-api: 0.116.7 #https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20&showAlphaFiles=show
             fabric-gametest-api: 2.0.9+50ed0faf7a # https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-gametest-api-v1/
+        exclude:
+          - modpack: cyclops-id
+            loader: forge
+          - modpack: cyclops-id
+            loader: fabric
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
