@@ -13,11 +13,13 @@
   "packageRules": [
     {
       "matchManagers": ["github-actions"],
+      "groupName": "GitHub Actions",
       "automerge": true,
       "automergeType": "branch"
     },
     {
       "matchManagers": ["maven"],
+      "groupName": "Maven dependencies",
       "automerge": true,
       "automergeType": "branch"
     }
