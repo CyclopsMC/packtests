@@ -20,6 +20,7 @@ jobs:
           - cyclops-id
         mc:
           - 1.21.1
+          - 1.21.11
         loader:
           - neoforge
           - forge
@@ -27,17 +28,23 @@ jobs:
         include:
           - mc: 1.21.1
             loader: fabric
-            fabric-api: 0.116.7 #https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20&showAlphaFiles=show
+            fabric-api: 0.116.7 # https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20&showAlphaFiles=show
             fabric-gametest-api: 2.0.9+50ed0faf7a # https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-gametest-api-v1/
+          - mc: 1.21.11
+            loader: fabric
+            fabric-api: 0.141.1 # https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20&showAlphaFiles=show
+            fabric-gametest-api: 3.1.9+39ce47f5f3 # https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-gametest-api-v1/
         exclude:
-          - modpack: cyclops-id
+          - modpack: cyclops-id # ID does not exist for Forge
             loader: forge
-          - modpack: cyclops-id
+          - modpack: cyclops-id # ID does not exist for Fabric
             loader: fabric
-          - modpack: cyclops-all-deps
+          - modpack: cyclops-all-deps # No deps are relevant for Forge mods
             loader: forge
-          - modpack: cyclops-all-deps
+          - modpack: cyclops-all-deps # No deps are relevant for Fabric mods
             loader: fabric
+          - modpack: cyclops-all-deps # Mod compats have not been added for 1.21.11 yet
+            mc: 1.21.11
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
@@ -55,7 +62,7 @@ jobs:
           GITHUB_USER: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: 'Test in runtime client'
-        if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric')
+        if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric' && matrix.mc != '1.21.11') # This does not work yet on Forge, Fabric, or 1.21.11 (all loaders)
         timeout-minutes: 10
         uses: headlesshq/mc-runtime-test@4.1.0
         with:
