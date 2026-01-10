@@ -57,7 +57,11 @@ jobs:
           distribution: 'microsoft'
           java-version: 21
       - name: 'Fetch modpack'
-        run: ./fetch.sh modpacks/${{ matrix.modpack }}/${{ matrix.mc }}/${{ matrix.loader }}/pom.xml $(pwd)/run/mods
+        uses: nick-fields/retry@v3 # Retry, as some maven repos can be finicky
+        with:
+          timeout_minutes: 5
+          max_attempts: 3
+          command: ./fetch.sh modpacks/${{ matrix.modpack }}/${{ matrix.mc }}/${{ matrix.loader }}/pom.xml $(pwd)/run/mods
         env:
           GITHUB_USER: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
