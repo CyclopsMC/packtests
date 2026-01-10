@@ -11,6 +11,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        modpack:
+          - cyclops-all
         mc:
           - 1.21.1
         loader:
@@ -27,7 +29,7 @@ jobs:
           distribution: 'microsoft'
           java-version: 21
       - name: 'Fetch modpack'
-        run: ./fetch.sh modpacks/cyclops-all/${{ matrix.mc }}/${{ matrix.loader }}/pom.xml $(pwd)/run/mods
+        run: ./fetch.sh modpacks/${{ matrix.modpack }}/${{ matrix.mc }}/${{ matrix.loader }}/pom.xml $(pwd)/run/mods
         env:
           GITHUB_USER: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -40,3 +42,7 @@ jobs:
           mc-runtime-test: ${{ matrix.loader }}
           java: ${{ env.java_version }}
           headlessmc-command: --jvm "-Djava.awt.headless=true -DMcRuntimeGameTestMinExpectedGameTests=1 -Dneoforge.enabledGameTestNamespaces=cyclopscore,commoncapabilities"
+      - uses: actions/upload-artifact@v6
+        with:
+          name: ${{ matrix.modpack }}-${{ matrix.mc }}-${{ matrix.loader }}-mods
+          path: run/mods
