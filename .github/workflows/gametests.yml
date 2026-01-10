@@ -11,6 +11,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        env:
+          - server
+          - client
         modpack:
           - cyclops-all
         mc:
@@ -41,7 +44,7 @@ jobs:
           GITHUB_USER: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: 'Test in runtime client'
-        if: matrix.loader != 'forge' && matrix.loader != 'fabric'
+        if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric')
         timeout-minutes: 10
         uses: headlesshq/mc-runtime-test@4.1.0
         with:
@@ -53,7 +56,17 @@ jobs:
           headlessmc-command: --jvm "-Djava.awt.headless=true -DMcRuntimeGameTestMinExpectedGameTests=1 -Dneoforge.enabledGameTestNamespaces=cyclopscore,commoncapabilities"
           fabric-api: ${{ matrix.fabric-api || 'none' }}
           fabric-gametest-api: ${{ matrix.fabric-gametest-api || 'none' }}
+      - name: 'Test in runtime server'
+        if: matrix.env == 'server'
+        timeout-minutes: 10
+        uses: headlesshq/mc-server-test@1.1.1
+        with:
+          java: ${{ env.java_version }}
+          mc: ${{ matrix.mc }}
+          modloader: ${{ matrix.loader }}
+          fabric-api: ${{ matrix.fabric-api || 'none' }}
       - uses: actions/upload-artifact@v6
+        if: matrix.env == 'client'
         with:
           name: ${{ matrix.modpack }}-${{ matrix.mc }}-${{ matrix.loader }}-mods
           path: run/mods
