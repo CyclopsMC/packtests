@@ -120,7 +120,7 @@
     <dependency>
       <groupId>com.almostreliable.mods</groupId>
       <artifactId>almostunified-neoforge</artifactId>
-      <version>1.21.1-1.3.0</version>
+      <version>1.21.1-1.4.0</version>
     </dependency>
 
     <dependency>
