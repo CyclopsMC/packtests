@@ -5,6 +5,8 @@
 
   <activeProfiles>
     <activeProfile>github</activeProfile>
+    <activeProfile>modmaven</activeProfile>
+    <activeProfile>public</activeProfile>
   </activeProfiles>
 
   <profiles>
@@ -12,15 +14,29 @@
       <id>github</id>
       <repositories>
         <repository>
-          <id>central</id>
-          <url>https://repo.maven.apache.org/maven2</url>
-        </repository>
-        <repository>
           <id>github</id>
           <url>https://maven.pkg.github.com/CyclopsMC/packages</url>
           <snapshots>
             <enabled>true</enabled>
           </snapshots>
+        </repository>
+      </repositories>
+    </profile>
+    <profile>
+      <id>modmaven</id>
+      <repositories>
+        <repository>
+          <id>modmaven</id>
+          <url>https://modmaven.dev/</url>
+        </repository>
+      </repositories>
+    </profile>
+    <profile>
+      <id>public</id>
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>https://repo.maven.apache.org/maven2</url>
         </repository>
       </repositories>
     </profile>
@@ -33,4 +49,5 @@
       <password>${GITHUB_TOKEN}</password>
     </server>
   </servers>
+
 </settings>
