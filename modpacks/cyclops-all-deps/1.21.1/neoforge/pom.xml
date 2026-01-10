@@ -7,7 +7,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.cyclops.packs</groupId>
-  <artifactId>cyclops-all-neoforge</artifactId>
+  <artifactId>cyclops-all-deps-neoforge</artifactId>
   <version>1.21.1</version>
   <packaging>pom</packaging>
 
@@ -72,6 +72,65 @@
       <version>1.30.3-1467</version>
     </dependency>
     
+    <!-- Integrated Dynamics deps: start -->
+    
+    <dependency>
+      <groupId>mezz.jei</groupId>
+      <artifactId>jei-1.21.1-neoforge</artifactId>
+      <version>19.27.0.340</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>mcjty.theoneprobe</groupId>
+      <artifactId>theoneprobe</artifactId>
+      <version>1.21_neo-12.0.3-5</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.github.glitchfiend</groupId>
+      <artifactId>TerraBlender-neoforge</artifactId>
+      <version>1.21-4.0.0.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>me.shedaniel</groupId>
+      <artifactId>RoughlyEnoughItems-neoforge</artifactId>
+      <version>16.0.783</version>
+      <exclusions>
+          <exclusion>
+              <groupId>*</groupId>
+              <artifactId>*</artifactId>
+          </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>me.shedaniel.cloth</groupId>
+      <artifactId>cloth-config-neoforge</artifactId>
+      <version>15.0.140</version>
+      <classifier>neoforge</classifier>
+    </dependency>
+
+    <dependency>
+      <groupId>dev.architectury</groupId>
+      <artifactId>architectury-neoforge</artifactId>
+      <version>13.0.6</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.almostreliable.mods</groupId>
+      <artifactId>almostunified-neoforge</artifactId>
+      <version>1.21.1-1.3.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>curse.maven</groupId>
+      <artifactId>jade-324717</artifactId>
+      <version>5884231</version>
+    </dependency>
+    
+    <!-- Integrated Dynamics deps: end -->
+    
     <dependency>
       <groupId>org.cyclops.integratedtunnels</groupId>
       <artifactId>integratedtunnels-1.21.1-neoforge</artifactId>
@@ -89,6 +148,22 @@
       <artifactId>integratedterminals-1.21.1-neoforge</artifactId>
       <version>1.6.23-663</version>
     </dependency>
+    
+    <!-- Integrated Terminals deps: start -->
+    
+    <dependency>
+      <groupId>top.theillusivec4.curios</groupId>
+      <artifactId>curios-neoforge</artifactId>
+      <version>7.3.4+1.20.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>dev.emi</groupId>
+      <artifactId>emi-neoforge</artifactId>
+      <version>1.1.16+1.21.1</version>
+    </dependency>
+
+    <!-- Integrated Terminals deps: start -->
     
     <dependency>
       <groupId>org.cyclops.integratedscripting</groupId>
@@ -108,6 +183,8 @@
       <version>1.0.3-89</version>
     </dependency>
     
+    <!-- Integrated Mekanism deps: start -->
+    
     <dependency>
       <groupId>mekanism</groupId>
       <artifactId>Mekanism</artifactId>
@@ -115,11 +192,17 @@
       <classifier>all</classifier>
     </dependency>
     
+    <!-- Integrated Mekanism deps: end -->
+    
     <dependency>
       <groupId>org.cyclops.evilcraft</groupId>
       <artifactId>evilcraft-1.21.1-neoforge</artifactId>
       <version>1.2.80-722</version>
     </dependency>
+    
+    <!-- Evilcraft deps: start -->
+    <!-- They overlap with deps of the mods above, so no need to re-list them. -->
+    <!-- Evilcraft deps: end -->
   
   </dependencies>
 </project>

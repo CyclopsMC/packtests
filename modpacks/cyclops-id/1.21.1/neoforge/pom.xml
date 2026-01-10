@@ -6,8 +6,8 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.cyclops</groupId>
-  <artifactId>cyclopspack-neoforge</artifactId>
+  <groupId>org.cyclops.packs</groupId>
+  <artifactId>cyclops-id-neoforge</artifactId>
   <version>1.21.1</version>
   <packaging>pom</packaging>
 

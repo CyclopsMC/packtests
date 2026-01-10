@@ -16,6 +16,7 @@ jobs:
           - client
         modpack:
           - cyclops-all
+          - cyclops-all-deps
           - cyclops-id
         mc:
           - 1.21.1
@@ -32,6 +33,10 @@ jobs:
           - modpack: cyclops-id
             loader: forge
           - modpack: cyclops-id
+            loader: fabric
+          - modpack: cyclops-all-deps
+            loader: forge
+          - modpack: cyclops-all-deps
             loader: fabric
     runs-on: ubuntu-latest
     steps:
