@@ -8,6 +8,13 @@ concurrency:
 jobs:
   build:
     name: Build
+    strategy:
+      fail-fast: false
+      matrix:
+        mc:
+          - 1.21.1
+        loader:
+          - neoforge
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
@@ -20,16 +27,16 @@ jobs:
           distribution: 'microsoft'
           java-version: 21
       - name: 'Fetch modpack'
-        run: ./fetch.sh modpacks/cyclops-all/1.21.1/neoforge/pom.xml
+        run: ./fetch.sh modpacks/cyclops-all/${{ matrix.mc }}/${{ matrix.loader }}/pom.xml
         env:
           GITHUB_USER: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: 'Test in runtime client'
         uses: headlesshq/mc-runtime-test@4.1.0
         with:
-          mc: 1.21.1
-          modloader: neoforge
-          regex: .*neoforge.*
-          mc-runtime-test: none
+          mc: ${{ matrix.mc }}
+          modloader: ${{ matrix.loader }}
+          regex: .*${{ matrix.loader }}.*
+          mc-runtime-test: ${{ matrix.loader }}
           java: ${{ env.java_version }}
           headlessmc-command: --jvm "-Djava.awt.headless=true -DMcRuntimeGameTestMinExpectedGameTests=1"
