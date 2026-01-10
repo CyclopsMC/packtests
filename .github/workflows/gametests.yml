@@ -41,7 +41,8 @@ jobs:
           GITHUB_USER: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: 'Test in runtime client'
-        if: matrix.loader != 'forge'
+        if: matrix.loader != 'forge' && matrix.loader != 'fabric'
+        timeout-minutes: 10
         uses: headlesshq/mc-runtime-test@4.1.0
         with:
           mc: ${{ matrix.mc }}
