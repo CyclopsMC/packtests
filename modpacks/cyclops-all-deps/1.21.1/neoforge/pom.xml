@@ -107,7 +107,7 @@
     <dependency>
       <groupId>me.shedaniel.cloth</groupId>
       <artifactId>cloth-config-neoforge</artifactId>
-      <version>15.0.140</version>
+      <version>21.11.153</version>
       <classifier>neoforge</classifier>
     </dependency>
 
