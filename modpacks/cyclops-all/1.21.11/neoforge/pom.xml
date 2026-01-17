@@ -87,7 +87,7 @@
     <dependency>
       <groupId>org.cyclops.integratedterminals</groupId>
       <artifactId>integratedterminals-1.21.11-neoforge</artifactId>
-      <version>1.6.6-664</version>
+      <version>1.6.6-672</version>
     </dependency>
     
     <dependency>
