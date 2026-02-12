@@ -140,7 +140,7 @@
     <dependency>
       <groupId>org.cyclops.integratedcrafting</groupId>
       <artifactId>integratedcrafting-1.21.1-neoforge</artifactId>
-      <version>1.4.3-458</version>
+      <version>1.4.4-469</version>
     </dependency>
     
     <dependency>
