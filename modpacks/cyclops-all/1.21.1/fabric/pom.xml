@@ -45,7 +45,7 @@
     <dependency>
       <groupId>org.cyclops.energeticsheep</groupId>
       <artifactId>energeticsheep-1.21.1-fabric</artifactId>
-      <version>1.1.18-178</version>
+      <version>1.1.18-189</version>
     </dependency>
     
     <dependency>
