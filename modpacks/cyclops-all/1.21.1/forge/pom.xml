@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-1.21.1-forge</artifactId>
-      <version>1.28.0-879</version>
+      <version>1.29.0-944</version>
     </dependency>
 
     <dependency>
