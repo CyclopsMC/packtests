@@ -51,7 +51,7 @@
     <dependency>
       <groupId>org.cyclops.colossalchests</groupId>
       <artifactId>colossalchests-1.21.11-fabric</artifactId>
-      <version>1.8.10-213</version>
+      <version>1.8.10-223</version>
     </dependency>
     
     <dependency>
