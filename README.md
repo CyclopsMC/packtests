@@ -1,4 +1,4 @@
-## Cyclps Pack Tests
+## Cyclops Pack Tests
 
 [![CI](https://github.com/CyclopsMC/packtests/actions/workflows/gametests.yml/badge.svg)](https://github.com/CyclopsMC/packtests/actions/workflows/gametests.yml)
 
