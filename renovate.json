@@ -20,6 +20,11 @@
       "matchManagers": ["maven"],
       "automerge": true,
       "automergeType": "branch"
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackagePrefixes": ["org.cyclops."],
+      "groupName": "Cyclops packages"
     }
   ],
   "github-actions": {
