@@ -24,7 +24,7 @@
     {
       "matchManagers": ["maven"],
       "matchPackagePrefixes": ["org.cyclops."],
-      "groupName": "org.cyclops packages"
+      "groupName": "Cyclops packages"
     }
   ],
   "github-actions": {
