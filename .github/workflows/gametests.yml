@@ -68,7 +68,7 @@ jobs:
       - name: 'Test in runtime client'
         if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric' && matrix.mc != '1.21.11') # This does not work yet on Forge, Fabric, or 1.21.11 (all loaders)
         timeout-minutes: 10
-        uses: headlesshq/mc-runtime-test@4.1.0
+        uses: headlesshq/mc-runtime-test@4.3.0
         with:
           mc: ${{ matrix.mc }}
           modloader: ${{ matrix.loader }}
