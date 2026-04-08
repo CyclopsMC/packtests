@@ -113,12 +113,12 @@
       <artifactId>Mekanism</artifactId>
       <version>1.21.1-10.7.17.83</version>
       <classifier>all</classifier>
-    </dependency>
+    </dependency>-->
     
     <dependency>
       <groupId>org.cyclops.evilcraft</groupId>
       <artifactId>evilcraft-26.1.1-neoforge</artifactId>
-      <version>1.2.62-828</version>
-    </dependency>-->
+      <version>1.2.62-835</version>
+    </dependency>
   </dependencies>
 </project>
