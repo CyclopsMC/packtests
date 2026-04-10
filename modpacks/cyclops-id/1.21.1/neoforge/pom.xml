@@ -69,7 +69,7 @@
     <dependency>
       <groupId>mekanism</groupId>
       <artifactId>Mekanism</artifactId>
-      <version>1.21.1-10.7.18.84</version>
+      <version>1.21.1-10.7.19.85</version>
       <classifier>all</classifier>
     </dependency>
   
