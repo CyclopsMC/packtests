@@ -183,8 +183,6 @@
       <version>1.0.4-102</version>
     </dependency>
     
-    <!-- Integrated Mekanism deps: start -->
-    
     <dependency>
       <groupId>mekanism</groupId>
       <artifactId>Mekanism</artifactId>
