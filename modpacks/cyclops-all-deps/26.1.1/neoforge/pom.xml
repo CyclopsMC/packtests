@@ -74,14 +74,11 @@
     
     <!-- Integrated Dynamics deps: start -->
     
-    <!--><dependency>
+    <dependency>
       <groupId>mezz.jei</groupId>
       <artifactId>jei-26.1.1-neoforge</artifactId>
       <version>29.4.0.23</version>
-    </dependency>-->
-    <!-- JEI 29.4.0.23 is incompatible with evilcraftcompat bundled in EvilCraft 1.2.84; it causes evilcraftcompat to fail to load,
-         which makes EvilCraft's RecipeBroomPartCombination recipe type get registered inconsistently,
-         and the player is disconnected on join due to a neoforge:recipe_content encoding error. -->
+    </dependency>
     
     <!--><dependency>
       <groupId>mcjty.theoneprobe</groupId>
@@ -198,7 +195,7 @@
     <dependency>
       <groupId>org.cyclops.evilcraft</groupId>
       <artifactId>evilcraft-26.1.1-neoforge</artifactId>
-      <version>1.2.84-844</version>
+      <version>1.2.84-849</version>
     </dependency>
     
     <!-- Evilcraft deps: start -->
