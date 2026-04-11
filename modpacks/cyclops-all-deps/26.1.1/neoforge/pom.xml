@@ -74,25 +74,25 @@
     
     <!-- Integrated Dynamics deps: start -->
     
-    <!--><dependency>
+    <dependency>
       <groupId>mezz.jei</groupId>
       <artifactId>jei-26.1.1-neoforge</artifactId>
-      <version>19.27.0.340</version>
+      <version>29.4.0.23</version>
     </dependency>
     
-    <dependency>
+    <!--><dependency>
       <groupId>mcjty.theoneprobe</groupId>
       <artifactId>theoneprobe</artifactId>
       <version>1.21_neo-12.0.8-7</version>
-    </dependency>
+    </dependency>-->
     
     <dependency>
       <groupId>com.github.glitchfiend</groupId>
       <artifactId>TerraBlender-neoforge</artifactId>
-      <version>1.21-4.0.0.1</version>
+      <version>26.1.1-26.1.1.0.1</version>
     </dependency>
 
-    <dependency>
+    <!--><dependency>
       <groupId>me.shedaniel</groupId>
       <artifactId>RoughlyEnoughItems-neoforge</artifactId>
       <version>16.0.799</version>
@@ -121,13 +121,13 @@
       <groupId>com.almostreliable.mods</groupId>
       <artifactId>almostunified-neoforge</artifactId>
       <version>1.21.1-1.4.1</version>
-    </dependency>
+    </dependency>-->
 
     <dependency>
       <groupId>curse.maven</groupId>
       <artifactId>jade-324717</artifactId>
-      <version>5884231</version>
-    </dependency>-->
+      <version>7903350</version>
+    </dependency>
     
     <!-- Integrated Dynamics deps: end -->
     
@@ -151,13 +151,13 @@
     
     <!-- Integrated Terminals deps: start -->
     
-    <!--><dependency>
+    <dependency>
       <groupId>top.theillusivec4.curios</groupId>
       <artifactId>curios-neoforge</artifactId>
-      <version>7.4.3+1.20.4</version>
+      <version>15.0.0-beta.1+26.1</version>
     </dependency>
 
-    <dependency>
+    <!--><dependency>
       <groupId>dev.emi</groupId>
       <artifactId>emi-neoforge</artifactId>
       <version>1.1.22+1.21.1</version>

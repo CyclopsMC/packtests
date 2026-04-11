@@ -43,8 +43,6 @@ jobs:
             loader: forge
           - modpack: cyclops-all-deps # No deps are relevant for Fabric mods
             loader: fabric
-          - modpack: cyclops-all-deps # Mod compats have not been added for 26.1.1 yet
-            mc: 26.1.1
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
