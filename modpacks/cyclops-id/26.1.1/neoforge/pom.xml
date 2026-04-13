@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-26.1.1-neoforge</artifactId>
-      <version>1.29.1-996</version>
+      <version>1.29.2-999</version>
     </dependency>
 
     <dependency>
@@ -27,7 +27,7 @@
     <dependency>
       <groupId>org.cyclops.integrateddynamics</groupId>
       <artifactId>integrateddynamics-26.1.1-neoforge</artifactId>
-      <version>1.32.4-1753</version>
+      <version>1.32.5-1769</version>
     </dependency>
     
     <dependency>
@@ -45,7 +45,7 @@
     <dependency>
       <groupId>org.cyclops.integratedterminals</groupId>
       <artifactId>integratedterminals-26.1.1-neoforge</artifactId>
-      <version>1.6.30-763</version>
+      <version>1.6.31-766</version>
     </dependency>
     
     <dependency>
