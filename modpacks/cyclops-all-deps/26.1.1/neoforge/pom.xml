@@ -195,7 +195,7 @@
     <dependency>
       <groupId>org.cyclops.evilcraft</groupId>
       <artifactId>evilcraft-26.1.1-neoforge</artifactId>
-      <version>1.2.85-862</version>
+      <version>1.2.85-863</version>
     </dependency>
     
     <!-- Evilcraft deps: start -->
