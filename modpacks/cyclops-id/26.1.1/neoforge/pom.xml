@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-26.1.1-neoforge</artifactId>
-      <version>1.29.4-1005</version>
+      <version>1.29.5-1010</version>
     </dependency>
 
     <dependency>
@@ -27,7 +27,7 @@
     <dependency>
       <groupId>org.cyclops.integrateddynamics</groupId>
       <artifactId>integrateddynamics-26.1.1-neoforge</artifactId>
-      <version>1.32.10-1795</version>
+      <version>1.32.11-1808</version>
     </dependency>
     
     <dependency>
@@ -39,13 +39,13 @@
     <dependency>
       <groupId>org.cyclops.integratedcrafting</groupId>
       <artifactId>integratedcrafting-26.1.1-neoforge</artifactId>
-      <version>1.4.5-554</version>
+      <version>1.4.5-556</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedterminals</groupId>
       <artifactId>integratedterminals-26.1.1-neoforge</artifactId>
-      <version>1.6.31-769</version>
+      <version>1.6.31-773</version>
     </dependency>
     
     <dependency>
@@ -57,7 +57,7 @@
     <dependency>
       <groupId>org.cyclops.integratedrest</groupId>
       <artifactId>integratedrest-26.1.1-neoforge</artifactId>
-      <version>1.1.15-193</version>
+      <version>1.1.15-194</version>
     </dependency>
     
     <!--><dependency>

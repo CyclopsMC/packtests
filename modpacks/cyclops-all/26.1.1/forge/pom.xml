@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-26.1.1-forge</artifactId>
-      <version>1.29.4-1005</version>
+      <version>1.29.5-1010</version>
     </dependency>
 
     <dependency>
@@ -33,13 +33,13 @@
     <dependency>
       <groupId>org.cyclops.capabilityproxy</groupId>
       <artifactId>capabilityproxy-26.1.1-forge</artifactId>
-      <version>2.2.2-203</version>
+      <version>2.2.2-204</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.everlastingabilities</groupId>
       <artifactId>everlastingabilities-26.1.1-forge</artifactId>
-      <version>2.5.7-376</version>
+      <version>2.5.8-378</version>
     </dependency>
     
     <dependency>
@@ -51,7 +51,7 @@
     <dependency>
       <groupId>org.cyclops.colossalchests</groupId>
       <artifactId>colossalchests-26.1.1-forge</artifactId>
-      <version>1.8.14-248</version>
+      <version>1.8.14-250</version>
     </dependency>
     
     <dependency>
