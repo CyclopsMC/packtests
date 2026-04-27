@@ -64,7 +64,7 @@ jobs:
           GITHUB_USER: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: 'Test in runtime client'
-        if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric') # This does not work yet on Forge or Fabric
+        if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric') && matrix.mc != '26.1.2' # This does not work yet on Forge, Fabric, or mc 26.1.2 (no mc-runtime-test asset available)
         timeout-minutes: 10
         uses: headlesshq/mc-runtime-test@4.3.1
         with:
