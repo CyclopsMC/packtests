@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-26.1.2-neoforge</artifactId>
-      <version>1.29.6-1020</version>
+      <version>1.29.7-1022</version>
     </dependency>
 
     <dependency>
@@ -140,7 +140,7 @@
     <dependency>
       <groupId>org.cyclops.integratedcrafting</groupId>
       <artifactId>integratedcrafting-26.1.2-neoforge</artifactId>
-      <version>1.4.6-569</version>
+      <version>1.4.7-571</version>
     </dependency>
     
     <dependency>
@@ -195,7 +195,7 @@
     <dependency>
       <groupId>org.cyclops.evilcraft</groupId>
       <artifactId>evilcraft-26.1.2-neoforge</artifactId>
-      <version>1.2.90-915</version>
+      <version>1.2.92-920</version>
     </dependency>
     
     <!-- Evilcraft deps: start -->
