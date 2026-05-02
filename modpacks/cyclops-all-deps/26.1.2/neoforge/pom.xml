@@ -69,7 +69,7 @@
     <dependency>
       <groupId>org.cyclops.integrateddynamics</groupId>
       <artifactId>integrateddynamics-26.1.2-neoforge</artifactId>
-      <version>1.32.12-1820</version>
+      <version>1.32.13-1822</version>
     </dependency>
     
     <!-- Integrated Dynamics deps: start -->
@@ -140,7 +140,7 @@
     <dependency>
       <groupId>org.cyclops.integratedcrafting</groupId>
       <artifactId>integratedcrafting-26.1.2-neoforge</artifactId>
-      <version>1.4.7-571</version>
+      <version>1.4.7-572</version>
     </dependency>
     
     <dependency>
