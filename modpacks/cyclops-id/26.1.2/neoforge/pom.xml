@@ -78,5 +78,11 @@
       <artifactId>evilcraft-26.1.2-neoforge</artifactId>
       <version>1.2.62-828</version>
     </dependency>-->
+
+    <dependency>
+      <groupId>com.refinedmods.refinedstorage</groupId>
+      <artifactId>refinedstorage-neoforge</artifactId>
+      <version>3.0.0-beta.7</version>
+    </dependency>
   </dependencies>
 </project>
