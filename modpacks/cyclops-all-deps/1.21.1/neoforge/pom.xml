@@ -203,6 +203,12 @@
     <!-- Evilcraft deps: start -->
     <!-- They overlap with deps of the mods above, so no need to re-list them. -->
     <!-- Evilcraft deps: end -->
+
+    <dependency>
+      <groupId>com.refinedmods.refinedstorage</groupId>
+      <artifactId>refinedstorage-neoforge</artifactId>
+      <version>2.0.4</version>
+    </dependency>
   
   </dependencies>
 </project>
