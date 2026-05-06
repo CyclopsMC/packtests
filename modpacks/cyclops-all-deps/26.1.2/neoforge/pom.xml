@@ -57,7 +57,7 @@
     <dependency>
       <groupId>org.cyclops.colossalchests</groupId>
       <artifactId>colossalchests-26.1.2-neoforge</artifactId>
-      <version>1.8.15-254</version>
+      <version>1.8.15-256</version>
     </dependency>
     
     <dependency>
@@ -69,7 +69,7 @@
     <dependency>
       <groupId>org.cyclops.integrateddynamics</groupId>
       <artifactId>integrateddynamics-26.1.2-neoforge</artifactId>
-      <version>1.32.13-1825</version>
+      <version>1.33.0-1834</version>
     </dependency>
     
     <!-- Integrated Dynamics deps: start -->
@@ -195,7 +195,7 @@
     <dependency>
       <groupId>org.cyclops.evilcraft</groupId>
       <artifactId>evilcraft-26.1.2-neoforge</artifactId>
-      <version>1.2.93-924</version>
+      <version>1.2.93-926</version>
     </dependency>
     
     <!-- Evilcraft deps: start -->
