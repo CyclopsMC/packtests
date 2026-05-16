@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-26.1.2-neoforge</artifactId>
-      <version>1.29.8-1026</version>
+      <version>1.29.8-1028</version>
     </dependency>
 
     <dependency>
@@ -33,7 +33,7 @@
     <dependency>
       <groupId>org.cyclops.commoncapabilities</groupId>
       <artifactId>commoncapabilities-26.1.2-neoforge</artifactId>
-      <version>2.11.6-348</version>
+      <version>2.11.7-351</version>
     </dependency>
 
     <dependency>
@@ -93,7 +93,7 @@
     <dependency>
       <groupId>org.cyclops.integratedscripting</groupId>
       <artifactId>integratedscripting-26.1.2-neoforge</artifactId>
-      <version>1.0.21-356</version>
+      <version>1.0.22-372</version>
     </dependency>
     
     <dependency>
@@ -118,7 +118,7 @@
     <dependency>
       <groupId>org.cyclops.evilcraft</groupId>
       <artifactId>evilcraft-26.1.2-neoforge</artifactId>
-      <version>1.2.93-926</version>
+      <version>1.2.94-932</version>
     </dependency>
 
     <dependency>
