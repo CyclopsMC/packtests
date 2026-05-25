@@ -25,6 +25,30 @@
       "matchManagers": ["maven"],
       "matchPackagePrefixes": ["org.cyclops."],
       "groupName": "Cyclops packages"
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["com.refinedmods.refinedstorage:refinedstorage-neoforge"],
+      "matchFileNames": ["modpacks/**/1.21.1/**/pom.xml"],
+      "allowedVersions": "/^2\\./"
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["com.refinedmods.refinedstorage:refinedstorage-neoforge"],
+      "matchFileNames": ["modpacks/**/26.1.*/**/pom.xml"],
+      "allowedVersions": "/^3\\./"
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["com.github.glitchfiend:TerraBlender-neoforge"],
+      "matchFileNames": ["modpacks/**/1.21.1/**/pom.xml"],
+      "allowedVersions": "/^1\\.21-/"
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["com.github.glitchfiend:TerraBlender-neoforge"],
+      "matchFileNames": ["modpacks/**/26.1.*/**/pom.xml"],
+      "allowedVersions": "/^26\\.1\\./"
     }
   ],
   "github-actions": {
