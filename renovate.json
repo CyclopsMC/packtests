@@ -35,7 +35,7 @@
     {
       "matchManagers": ["maven"],
       "matchPackageNames": ["com.refinedmods.refinedstorage:refinedstorage-neoforge"],
-      "matchFileNames": ["modpacks/**/26.1.*/**/pom.xml"],
+      "matchFileNames": ["modpacks/**/26.1*/**/pom.xml"],
       "allowedVersions": "/^3\\./"
     },
     {
@@ -47,7 +47,7 @@
     {
       "matchManagers": ["maven"],
       "matchPackageNames": ["com.github.glitchfiend:TerraBlender-neoforge"],
-      "matchFileNames": ["modpacks/**/26.1.*/**/pom.xml"],
+      "matchFileNames": ["modpacks/**/26.1*/**/pom.xml"],
       "allowedVersions": "/^26\\.1\\./"
     }
   ],
