@@ -124,7 +124,7 @@
     <dependency>
       <groupId>com.refinedmods.refinedstorage</groupId>
       <artifactId>refinedstorage-neoforge</artifactId>
-      <version>3.0.0-beta.8</version>
+      <version>3.0.5</version>
     </dependency>
   </dependencies>
 </project>
