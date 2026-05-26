@@ -63,7 +63,7 @@
     <dependency>
       <groupId>org.cyclops.iconexporter</groupId>
       <artifactId>iconexporter-26.1.2-neoforge</artifactId>
-      <version>1.4.1-199</version>
+      <version>1.4.2-204</version>
     </dependency>
     
     <dependency>
