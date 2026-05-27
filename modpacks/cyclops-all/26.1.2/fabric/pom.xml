@@ -57,7 +57,7 @@
     <dependency>
       <groupId>org.cyclops.iconexporter</groupId>
       <artifactId>iconexporter-26.1.2-fabric</artifactId>
-      <version>1.4.2-204</version>
+      <version>1.4.2-205</version>
     </dependency>
 
   </dependencies>
