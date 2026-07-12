@@ -134,7 +134,7 @@
     <dependency>
       <groupId>org.cyclops.integratedtunnels</groupId>
       <artifactId>integratedtunnels-26.1.2-neoforge</artifactId>
-      <version>1.9.6-638</version>
+      <version>1.9.6-644</version>
     </dependency>
     
     <dependency>
@@ -146,7 +146,7 @@
     <dependency>
       <groupId>org.cyclops.integratedterminals</groupId>
       <artifactId>integratedterminals-26.1.2-neoforge</artifactId>
-      <version>1.7.0-785</version>
+      <version>1.7.0-792</version>
     </dependency>
     
     <!-- Integrated Terminals deps: start -->
@@ -168,13 +168,13 @@
     <dependency>
       <groupId>org.cyclops.integratedscripting</groupId>
       <artifactId>integratedscripting-26.1.2-neoforge</artifactId>
-      <version>1.0.22-377</version>
+      <version>1.0.22-382</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedrest</groupId>
       <artifactId>integratedrest-26.1.2-neoforge</artifactId>
-      <version>1.1.15-197</version>
+      <version>1.1.15-202</version>
     </dependency>
 
     <dependency>
