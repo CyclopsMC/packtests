@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-1.21.1-forge</artifactId>
-      <version>1.29.1-1045</version>
+      <version>1.29.1-1059</version>
     </dependency>
 
     <dependency>
@@ -33,7 +33,7 @@
     <dependency>
       <groupId>org.cyclops.capabilityproxy</groupId>
       <artifactId>capabilityproxy-1.21.1-forge</artifactId>
-      <version>2.2.1-217</version>
+      <version>2.2.1-220</version>
     </dependency>
     
     <dependency>

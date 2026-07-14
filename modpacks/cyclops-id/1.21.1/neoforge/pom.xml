@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-1.21.1-neoforge</artifactId>
-      <version>1.29.1-1045</version>
+      <version>1.29.1-1059</version>
     </dependency>
 
     <dependency>
@@ -27,13 +27,13 @@
     <dependency>
       <groupId>org.cyclops.integrateddynamics</groupId>
       <artifactId>integrateddynamics-1.21.1-neoforge</artifactId>
-      <version>1.33.4-1897</version>
+      <version>1.33.4-1907</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedtunnels</groupId>
       <artifactId>integratedtunnels-1.21.1-neoforge</artifactId>
-      <version>1.9.4-647</version>
+      <version>1.9.4-652</version>
     </dependency>
     
     <dependency>
@@ -51,7 +51,7 @@
     <dependency>
       <groupId>org.cyclops.integratedscripting</groupId>
       <artifactId>integratedscripting-1.21.1-neoforge</artifactId>
-      <version>1.0.23-396</version>
+      <version>1.0.24-410</version>
     </dependency>
     
     <dependency>
@@ -69,7 +69,7 @@
     <dependency>
       <groupId>org.cyclops.integratedmekanism</groupId>
       <artifactId>integratedmekanism-1.21.1-neoforge</artifactId>
-      <version>1.0.4-102</version>
+      <version>1.0.4-110</version>
     </dependency>
     
     <dependency>
