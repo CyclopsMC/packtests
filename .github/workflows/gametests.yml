@@ -48,9 +48,6 @@ jobs:
             loader: forge
           - modpack: cyclops-all-deps # No deps are relevant for Fabric mods
             loader: fabric
-          - env: client # Disabled until https://github.com/headlesshq/mc-runtime-test/issues/137 is fixed
-            loader: neoforge
-            mc: 26.2
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
@@ -74,7 +71,7 @@ jobs:
       - name: 'Test in runtime client'
         if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric') # This does not work yet on Forge or Fabric
         timeout-minutes: 10
-        uses: headlesshq/mc-runtime-test@4.4.0
+        uses: headlesshq/mc-runtime-test@4.5.0
         with:
           mc: ${{ matrix.mc }}
           modloader: ${{ matrix.loader }}
