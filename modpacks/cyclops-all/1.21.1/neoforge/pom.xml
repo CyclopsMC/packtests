@@ -93,7 +93,7 @@
     <dependency>
       <groupId>org.cyclops.integratedscripting</groupId>
       <artifactId>integratedscripting-1.21.1-neoforge</artifactId>
-      <version>1.0.22-376</version>
+      <version>1.0.23-387</version>
     </dependency>
     
     <dependency>
@@ -105,7 +105,7 @@
     <dependency>
       <groupId>org.cyclops.integratednbt</groupId>
       <artifactId>integratednbt-1.21.1-neoforge</artifactId>
-      <version>1.6.1-28</version>
+      <version>1.6.2-42</version>
     </dependency>
     
     <dependency>
