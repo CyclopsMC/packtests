@@ -15,61 +15,61 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-26.2-neoforge</artifactId>
-      <version>1.30.0-1043</version>
+      <version>1.30.0-1047</version>
     </dependency>
 
     <dependency>
       <groupId>org.cyclops.flopper</groupId>
       <artifactId>flopper-26.2-neoforge</artifactId>
-      <version>1.1.9-234</version>
+      <version>1.1.9-238</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.structuredcrafting</groupId>
       <artifactId>structuredcrafting-26.2-neoforge</artifactId>
-      <version>0.2.14-213</version>
+      <version>0.2.14-217</version>
     </dependency>
 
     <dependency>
       <groupId>org.cyclops.commoncapabilities</groupId>
       <artifactId>commoncapabilities-26.2-neoforge</artifactId>
-      <version>2.11.8-361</version>
+      <version>2.11.8-365</version>
     </dependency>
   
     <dependency>
       <groupId>org.cyclops.capabilityproxy</groupId>
       <artifactId>capabilityproxy-26.2-neoforge</artifactId>
-      <version>2.2.3-215</version>
+      <version>2.2.3-219</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.everlastingabilities</groupId>
       <artifactId>everlastingabilities-26.2-neoforge</artifactId>
-      <version>2.5.10-388</version>
+      <version>2.5.10-392</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.energeticsheep</groupId>
       <artifactId>energeticsheep-26.2-neoforge</artifactId>
-      <version>1.2.0-251</version>
+      <version>1.2.0-255</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.colossalchests</groupId>
       <artifactId>colossalchests-26.2-neoforge</artifactId>
-      <version>1.8.16-261</version>
+      <version>1.8.16-265</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.iconexporter</groupId>
       <artifactId>iconexporter-26.2-neoforge</artifactId>
-      <version>1.4.2-208</version>
+      <version>1.4.2-212</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integrateddynamics</groupId>
       <artifactId>integrateddynamics-26.2-neoforge</artifactId>
-      <version>1.33.4-1878</version>
+      <version>1.33.4-1900</version>
     </dependency>
     
     <!-- Integrated Dynamics deps: start -->
@@ -140,19 +140,19 @@
     <dependency>
       <groupId>org.cyclops.integratedtunnels</groupId>
       <artifactId>integratedtunnels-26.2-neoforge</artifactId>
-      <version>1.9.6-645</version>
+      <version>1.9.6-649</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedcrafting</groupId>
       <artifactId>integratedcrafting-26.2-neoforge</artifactId>
-      <version>1.4.7-595</version>
+      <version>1.4.7-601</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedterminals</groupId>
       <artifactId>integratedterminals-26.2-neoforge</artifactId>
-      <version>1.7.0-793</version>
+      <version>1.7.0-799</version>
     </dependency>
     
     <!-- Integrated Terminals deps: start -->
@@ -174,19 +174,19 @@
     <dependency>
       <groupId>org.cyclops.integratedscripting</groupId>
       <artifactId>integratedscripting-26.2-neoforge</artifactId>
-      <version>1.0.22-390</version>
+      <version>1.0.22-398</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedrest</groupId>
       <artifactId>integratedrest-26.2-neoforge</artifactId>
-      <version>1.1.15-203</version>
+      <version>1.1.15-207</version>
     </dependency>
 
     <dependency>
       <groupId>org.cyclops.integratednbt</groupId>
       <artifactId>integratednbt-26.2-neoforge</artifactId>
-      <version>1.6.1-45</version>
+      <version>1.6.1-56</version>
     </dependency>
     
     <!--><dependency>
@@ -207,7 +207,7 @@
     <dependency>
       <groupId>org.cyclops.evilcraft</groupId>
       <artifactId>evilcraft-26.2-neoforge</artifactId>
-      <version>1.2.98-973</version>
+      <version>1.2.98-980</version>
     </dependency>
     
     <!-- Evilcraft deps: start -->

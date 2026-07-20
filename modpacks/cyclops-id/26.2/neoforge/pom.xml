@@ -15,55 +15,55 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-26.2-neoforge</artifactId>
-      <version>1.30.0-1043</version>
+      <version>1.30.0-1047</version>
     </dependency>
 
     <dependency>
       <groupId>org.cyclops.commoncapabilities</groupId>
       <artifactId>commoncapabilities-26.2-neoforge</artifactId>
-      <version>2.11.8-361</version>
+      <version>2.11.8-365</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integrateddynamics</groupId>
       <artifactId>integrateddynamics-26.2-neoforge</artifactId>
-      <version>1.33.4-1878</version>
+      <version>1.33.4-1900</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedtunnels</groupId>
       <artifactId>integratedtunnels-26.2-neoforge</artifactId>
-      <version>1.9.6-645</version>
+      <version>1.9.6-649</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedcrafting</groupId>
       <artifactId>integratedcrafting-26.2-neoforge</artifactId>
-      <version>1.4.7-595</version>
+      <version>1.4.7-601</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedterminals</groupId>
       <artifactId>integratedterminals-26.2-neoforge</artifactId>
-      <version>1.7.0-793</version>
+      <version>1.7.0-799</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedscripting</groupId>
       <artifactId>integratedscripting-26.2-neoforge</artifactId>
-      <version>1.0.22-390</version>
+      <version>1.0.22-398</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedrest</groupId>
       <artifactId>integratedrest-26.2-neoforge</artifactId>
-      <version>1.1.15-203</version>
+      <version>1.1.15-207</version>
     </dependency>
 
     <dependency>
       <groupId>org.cyclops.integratednbt</groupId>
       <artifactId>integratednbt-26.2-neoforge</artifactId>
-      <version>1.6.1-45</version>
+      <version>1.6.1-56</version>
     </dependency>
 
     <!--><dependency>
