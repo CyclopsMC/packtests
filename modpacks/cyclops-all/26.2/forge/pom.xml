@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-26.2-forge</artifactId>
-      <version>1.30.0-1047</version>
+      <version>1.30.0-1053</version>
     </dependency>
 
     <dependency>
@@ -45,7 +45,7 @@
     <dependency>
       <groupId>org.cyclops.energeticsheep</groupId>
       <artifactId>energeticsheep-26.2-forge</artifactId>
-      <version>1.2.0-255</version>
+      <version>1.2.0-256</version>
     </dependency>
     
     <dependency>

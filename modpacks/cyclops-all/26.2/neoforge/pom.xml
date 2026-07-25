@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-26.2-neoforge</artifactId>
-      <version>1.30.0-1047</version>
+      <version>1.30.0-1053</version>
     </dependency>
 
     <dependency>
@@ -51,7 +51,7 @@
     <dependency>
       <groupId>org.cyclops.energeticsheep</groupId>
       <artifactId>energeticsheep-26.2-neoforge</artifactId>
-      <version>1.2.0-255</version>
+      <version>1.2.0-256</version>
     </dependency>
     
     <dependency>
@@ -69,13 +69,13 @@
     <dependency>
       <groupId>org.cyclops.integrateddynamics</groupId>
       <artifactId>integrateddynamics-26.2-neoforge</artifactId>
-      <version>1.33.4-1900</version>
+      <version>1.33.4-1906</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedtunnels</groupId>
       <artifactId>integratedtunnels-26.2-neoforge</artifactId>
-      <version>1.9.6-649</version>
+      <version>1.9.6-651</version>
     </dependency>
     
     <dependency>
@@ -93,7 +93,7 @@
     <dependency>
       <groupId>org.cyclops.integratedscripting</groupId>
       <artifactId>integratedscripting-26.2-neoforge</artifactId>
-      <version>1.0.22-407</version>
+      <version>1.0.22-409</version>
     </dependency>
     
     <dependency>
@@ -105,7 +105,7 @@
     <dependency>
       <groupId>org.cyclops.integratednbt</groupId>
       <artifactId>integratednbt-26.2-neoforge</artifactId>
-      <version>1.6.1-56</version>
+      <version>1.6.1-60</version>
     </dependency>
     
     <!--><dependency>
@@ -124,7 +124,7 @@
     <dependency>
       <groupId>org.cyclops.evilcraft</groupId>
       <artifactId>evilcraft-26.2-neoforge</artifactId>
-      <version>1.2.98-991</version>
+      <version>1.2.98-993</version>
     </dependency>
 
     <!--<dependency>
