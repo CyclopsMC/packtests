@@ -95,7 +95,7 @@
     <dependency>
       <groupId>me.shedaniel</groupId>
       <artifactId>RoughlyEnoughItems-neoforge</artifactId>
-      <version>16.0.799</version>
+      <version>26.2.820</version>
       <exclusions>
           <exclusion>
               <groupId>*</groupId>
