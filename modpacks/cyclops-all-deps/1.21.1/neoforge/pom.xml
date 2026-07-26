@@ -77,7 +77,7 @@
     <dependency>
       <groupId>mezz.jei</groupId>
       <artifactId>jei-1.21.1-neoforge</artifactId>
-      <version>19.39.0.371</version>
+      <version>19.39.0.372</version>
     </dependency>
     
     <dependency>
