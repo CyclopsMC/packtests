@@ -174,7 +174,7 @@
     <dependency>
       <groupId>org.cyclops.integratedscripting</groupId>
       <artifactId>integratedscripting-26.2-neoforge</artifactId>
-      <version>1.0.22-412</version>
+      <version>1.0.22-419</version>
     </dependency>
     
     <dependency>
