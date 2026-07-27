@@ -51,7 +51,7 @@
     <dependency>
       <groupId>org.cyclops.colossalchests</groupId>
       <artifactId>colossalchests-26.1.2-forge</artifactId>
-      <version>1.8.16-264</version>
+      <version>1.8.16-267</version>
     </dependency>
     
     <dependency>

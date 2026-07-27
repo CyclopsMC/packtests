@@ -28,13 +28,15 @@ jobs:
           - fabric
         include:
           - mc: 1.21.1
+            mc-server-test-file: ./mc-server-noop.json # All loaders are finicky with gametests in 1.21 production, so don't run them.
+          - mc: 1.21.1
             loader: fabric
             fabric-api: 0.116.7 # https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20&showAlphaFiles=show
             fabric-gametest-api: 2.0.9+50ed0faf7a # https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-gametest-api-v1/
           - mc: 26.1.2
             loader: fabric
             fabric-api: 0.146.1 # https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20&showAlphaFiles=show
-            fabric-gametest-api: 4.0.14+1d12dba080 # https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-gametest-api-v1/
+            fabric-gametest-api: 4.0.13+00a1fba64c # https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-gametest-api-v1/
           - mc: 26.2
             loader: fabric
             fabric-api: 0.153.0 # https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20&showAlphaFiles=show
@@ -59,7 +61,20 @@ jobs:
         with:
           distribution: 'microsoft'
           java-version: 25
+      - name: 'Load modpack from cache'
+        id: cache-mods
+        uses: actions/cache@v6
+        with:
+          path: run/mods
+          key: >-
+            mods-${{ matrix.modpack }}-${{ matrix.mc }}-${{ matrix.loader }}-${{
+              hashFiles(format('modpacks/{0}/{1}/{2}/pom.xml',
+                matrix.modpack,
+                matrix.mc,
+                matrix.loader))
+            }}
       - name: 'Fetch modpack'
+        if: steps.cache-mods.outputs.cache-hit != 'true'
         uses: nick-fields/retry@v4 # Retry, as some maven repos can be finicky
         with:
           timeout_minutes: 5
@@ -72,24 +87,30 @@ jobs:
         if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric') # This does not work yet on Forge or Fabric
         timeout-minutes: 10
         uses: headlesshq/mc-runtime-test@4.5.1
+        env:
+          CYCLOPSMC_ENABLEDGAMETESTSGLOBAL: true
         with:
           mc: ${{ matrix.mc }}
           modloader: ${{ matrix.loader }}
           regex: .*${{ matrix.loader }}.*
           mc-runtime-test: ${{ matrix.loader == 'forge' && 'lexforge' || matrix.loader }}
           java: ${{ env.java_version }}
-          headlessmc-command: --jvm "-Djava.awt.headless=true -DMcRuntimeGameTestMinExpectedGameTests=1 -Dneoforge.enabledGameTestNamespaces=cyclopscore,commoncapabilities"
+          headlessmc-command: --jvm "-Djava.awt.headless=true -DMcRuntimeGameTestMinExpectedGameTests=1"
           fabric-api: ${{ matrix.fabric-api || 'none' }}
           fabric-gametest-api: ${{ matrix.fabric-gametest-api || 'none' }}
       - name: 'Test in runtime server'
         if: matrix.env == 'server'
         timeout-minutes: 10
         uses: headlesshq/mc-server-test@1.1.1
+        env:
+          CYCLOPSMC_ENABLEDGAMETESTSGLOBAL: true
         with:
           java: ${{ env.java_version }}
           mc: ${{ matrix.mc }}
           modloader: ${{ matrix.loader }}
           fabric-api: ${{ matrix.fabric-api || 'none' }}
+          fabric-gametest-api: ${{ matrix.fabric-gametest-api || 'none' }}
+          test-file: ${{ matrix.mc-server-test-file || './mc-server-test.json' }}
       - uses: actions/upload-artifact@v7
         if: matrix.env == 'client'
         with:
