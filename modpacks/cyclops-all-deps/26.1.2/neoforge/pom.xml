@@ -92,10 +92,10 @@
       <version>26.1.2-26.1.2.0.3</version>
     </dependency>
 
-    <!--><dependency>
+    <dependency>
       <groupId>me.shedaniel</groupId>
       <artifactId>RoughlyEnoughItems-neoforge</artifactId>
-      <version>16.0.799</version>
+      <version>26.1.819</version>
       <exclusions>
           <exclusion>
               <groupId>*</groupId>
@@ -107,17 +107,16 @@
     <dependency>
       <groupId>me.shedaniel.cloth</groupId>
       <artifactId>cloth-config-neoforge</artifactId>
-      <version>15.0.140</version>
-      <classifier>neoforge</classifier>
+      <version>26.1.154</version>
     </dependency>
 
     <dependency>
       <groupId>dev.architectury</groupId>
       <artifactId>architectury-neoforge</artifactId>
-      <version>13.0.8</version>
+      <version>20.0.9</version>
     </dependency>
 
-    <dependency>
+    <!--><dependency>
       <groupId>com.almostreliable.mods</groupId>
       <artifactId>almostunified-neoforge</artifactId>
       <version>1.21.1-1.4.1</version>
