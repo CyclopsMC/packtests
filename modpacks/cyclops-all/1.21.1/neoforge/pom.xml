@@ -81,13 +81,13 @@
     <dependency>
       <groupId>org.cyclops.integratedcrafting</groupId>
       <artifactId>integratedcrafting-1.21.1-neoforge</artifactId>
-      <version>1.4.6-599</version>
+      <version>1.4.6-605</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedterminals</groupId>
       <artifactId>integratedterminals-1.21.1-neoforge</artifactId>
-      <version>1.7.0-797</version>
+      <version>1.7.0-800</version>
     </dependency>
     
     <dependency>
@@ -124,7 +124,7 @@
     <dependency>
       <groupId>org.cyclops.evilcraft</groupId>
       <artifactId>evilcraft-1.21.1-neoforge</artifactId>
-      <version>1.2.91-999</version>
+      <version>1.2.91-1002</version>
     </dependency>
 
     <dependency>

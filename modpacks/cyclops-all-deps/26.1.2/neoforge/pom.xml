@@ -69,7 +69,7 @@
     <dependency>
       <groupId>org.cyclops.integrateddynamics</groupId>
       <artifactId>integrateddynamics-26.1.2-neoforge</artifactId>
-      <version>1.33.7-1911</version>
+      <version>1.33.8-1912</version>
     </dependency>
     
     <!-- Integrated Dynamics deps: start -->
@@ -139,13 +139,13 @@
     <dependency>
       <groupId>org.cyclops.integratedcrafting</groupId>
       <artifactId>integratedcrafting-26.1.2-neoforge</artifactId>
-      <version>1.4.7-603</version>
+      <version>1.4.7-606</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedterminals</groupId>
       <artifactId>integratedterminals-26.1.2-neoforge</artifactId>
-      <version>1.7.0-798</version>
+      <version>1.7.1-801</version>
     </dependency>
     
     <!-- Integrated Terminals deps: start -->
@@ -200,7 +200,7 @@
     <dependency>
       <groupId>org.cyclops.evilcraft</groupId>
       <artifactId>evilcraft-26.1.2-neoforge</artifactId>
-      <version>1.2.101-1000</version>
+      <version>1.2.101-1003</version>
     </dependency>
     
     <!-- Evilcraft deps: start -->
