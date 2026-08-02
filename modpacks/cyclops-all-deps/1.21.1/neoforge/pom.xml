@@ -128,6 +128,24 @@
       <artifactId>jade-324717</artifactId>
       <version>5884231</version>
     </dependency>
+
+    <dependency>
+      <groupId>curse.maven</groupId>
+      <artifactId>create-aeronautics-676721</artifactId>
+      <version>8240058</version>
+    </dependency>
+
+    <dependency>
+      <groupId>curse.maven</groupId>
+      <artifactId>sable-1312371</artifactId>
+      <version>8263584</version>
+    </dependency>
+
+    <dependency>
+      <groupId>curse.maven</groupId>
+      <artifactId>create-328085</artifactId>
+      <version>7963363</version>
+    </dependency>
     
     <!-- Integrated Dynamics deps: end -->
     
