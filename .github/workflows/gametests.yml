@@ -28,7 +28,7 @@ jobs:
           - fabric
         include:
           - mc: 1.21.1
-            mc-server-test-file: ./mc-server-noop.json # All loaders are finicky with gametests in 1.21 production, so don't run them.
+            mc-server-test-file: none # All loaders are finicky with gametests in 1.21 production, so don't run them.
           - mc: 1.21.1
             loader: fabric
             fabric-api: 0.116.7 # https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20&showAlphaFiles=show
