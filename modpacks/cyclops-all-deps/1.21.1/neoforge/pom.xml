@@ -188,6 +188,22 @@
       <artifactId>integratedscripting-1.21.1-neoforge</artifactId>
       <version>1.0.25-442</version>
     </dependency>
+
+    <!-- Integrated Scripting deps: start (no actual dependencies, but mods that can cause conflicts) -->
+    
+    <dependency>
+      <groupId>thedarkcolour</groupId>
+      <artifactId>kotlinforforge-neoforge</artifactId>
+      <version>5.10.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.cobblemon</groupId>
+      <artifactId>mod</artifactId>
+      <version>1.7.3+1.21.1</version>
+    </dependency>
+    
+    <!-- Integrated Mekanism deps: end -->
     
     <dependency>
       <groupId>org.cyclops.integratedrest</groupId>
