@@ -167,7 +167,7 @@
     <dependency>
       <groupId>org.cyclops.integratedscripting</groupId>
       <artifactId>integratedscripting-26.1.2-neoforge</artifactId>
-      <version>1.0.26-445</version>
+      <version>1.0.27-450</version>
     </dependency>
     
     <dependency>
@@ -200,7 +200,7 @@
     <dependency>
       <groupId>org.cyclops.evilcraft</groupId>
       <artifactId>evilcraft-26.1.2-neoforge</artifactId>
-      <version>1.2.102-1018</version>
+      <version>1.2.102-1022</version>
     </dependency>
     
     <!-- Evilcraft deps: start -->
