@@ -194,7 +194,7 @@
     <dependency>
       <groupId>thedarkcolour</groupId>
       <artifactId>kotlinforforge-neoforge</artifactId>
-      <version>5.10.0</version>
+      <version>5.12.0</version>
     </dependency>
 
     <dependency>
