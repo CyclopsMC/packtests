@@ -27,7 +27,7 @@
     <dependency>
       <groupId>org.cyclops.structuredcrafting</groupId>
       <artifactId>structuredcrafting-26.1.2-fabric</artifactId>
-      <version>0.2.14-216</version>
+      <version>0.2.14-219</version>
     </dependency>
 
     <dependency>

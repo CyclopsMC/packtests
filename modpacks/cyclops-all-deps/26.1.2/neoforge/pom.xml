@@ -27,7 +27,7 @@
     <dependency>
       <groupId>org.cyclops.structuredcrafting</groupId>
       <artifactId>structuredcrafting-26.1.2-neoforge</artifactId>
-      <version>0.2.14-216</version>
+      <version>0.2.14-219</version>
     </dependency>
 
     <dependency>
@@ -133,13 +133,13 @@
     <dependency>
       <groupId>org.cyclops.integratedtunnels</groupId>
       <artifactId>integratedtunnels-26.1.2-neoforge</artifactId>
-      <version>1.9.6-653</version>
+      <version>1.9.6-675</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedcrafting</groupId>
       <artifactId>integratedcrafting-26.1.2-neoforge</artifactId>
-      <version>1.4.8-613</version>
+      <version>1.4.8-616</version>
     </dependency>
     
     <dependency>
