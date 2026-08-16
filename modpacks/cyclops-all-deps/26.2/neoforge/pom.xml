@@ -77,7 +77,7 @@
     <dependency>
       <groupId>mezz.jei</groupId>
       <artifactId>jei-26.2-neoforge</artifactId>
-      <version>30.16.0.134</version>
+      <version>30.24.0.165</version>
     </dependency>
     
     <!--><dependency>
