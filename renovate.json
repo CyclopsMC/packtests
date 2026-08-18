@@ -49,6 +49,12 @@
       "matchPackageNames": ["com.github.glitchfiend:TerraBlender-neoforge"],
       "matchFileNames": ["modpacks/**/26.1*/**/pom.xml"],
       "allowedVersions": "/^26\\.1\\./"
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["thedarkcolour:kotlinforforge-neoforge"],
+      "matchFileNames": ["modpacks/**/1.21.1/**/pom.xml"],
+      "allowedVersions": "/^5\\./"
     }
   ],
   "github-actions": {
