@@ -84,7 +84,7 @@ jobs:
           GITHUB_USER: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: 'Test in runtime client'
-        if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric') && !(matrix.loader == 'neoforge' && matrix.mc == '1.21.1') # Re-enable when bug is fixed: https://github.com/headlesshq/mc-runtime-test/issues/148
+        if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric') # This does not work yet on Forge or Fabric
         timeout-minutes: 10
         uses: headlesshq/mc-runtime-test@4.5.1
         env:
@@ -99,7 +99,7 @@ jobs:
           fabric-api: ${{ matrix.fabric-api || 'none' }}
           fabric-gametest-api: ${{ matrix.fabric-gametest-api || 'none' }}
       - name: 'Test in runtime server'
-        if: matrix.env == 'server' && !(matrix.loader == 'neoforge' && matrix.mc == '1.21.1') # Re-enable when bug is fixed: https://github.com/headlesshq/mc-server-test/issues/8
+        if: matrix.env == 'server'
         timeout-minutes: 10
         uses: headlesshq/mc-server-test@1.1.1
         env:
