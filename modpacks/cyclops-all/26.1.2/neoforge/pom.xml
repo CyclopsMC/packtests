@@ -15,97 +15,97 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-26.1.2-neoforge</artifactId>
-      <version>1.30.2-1065</version>
+      <version>1.30.3-1086</version>
     </dependency>
 
     <dependency>
       <groupId>org.cyclops.flopper</groupId>
       <artifactId>flopper-26.1.2-neoforge</artifactId>
-      <version>1.1.9-237</version>
+      <version>1.1.9-239</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.structuredcrafting</groupId>
       <artifactId>structuredcrafting-26.1.2-neoforge</artifactId>
-      <version>0.2.14-219</version>
+      <version>0.2.15-226</version>
     </dependency>
 
     <dependency>
       <groupId>org.cyclops.commoncapabilities</groupId>
       <artifactId>commoncapabilities-26.1.2-neoforge</artifactId>
-      <version>2.11.8-364</version>
+      <version>2.11.8-366</version>
     </dependency>
 
     <dependency>
       <groupId>org.cyclops.capabilityproxy</groupId>
       <artifactId>capabilityproxy-26.1.2-neoforge</artifactId>
-      <version>2.2.3-223</version>
+      <version>2.2.3-225</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.everlastingabilities</groupId>
       <artifactId>everlastingabilities-26.1.2-neoforge</artifactId>
-      <version>2.5.10-391</version>
+      <version>2.5.10-393</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.energeticsheep</groupId>
       <artifactId>energeticsheep-26.1.2-neoforge</artifactId>
-      <version>1.2.0-254</version>
+      <version>1.2.0-257</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.colossalchests</groupId>
       <artifactId>colossalchests-26.1.2-neoforge</artifactId>
-      <version>1.8.16-267</version>
+      <version>1.9.0-287</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.iconexporter</groupId>
       <artifactId>iconexporter-26.1.2-neoforge</artifactId>
-      <version>1.4.2-211</version>
+      <version>1.4.2-213</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integrateddynamics</groupId>
       <artifactId>integrateddynamics-26.1.2-neoforge</artifactId>
-      <version>1.33.9-1929</version>
+      <version>1.34.0-1964</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedtunnels</groupId>
       <artifactId>integratedtunnels-26.1.2-neoforge</artifactId>
-      <version>1.9.6-675</version>
+      <version>1.10.0-707</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedcrafting</groupId>
       <artifactId>integratedcrafting-26.1.2-neoforge</artifactId>
-      <version>1.4.8-616</version>
+      <version>1.5.0-640</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedterminals</groupId>
       <artifactId>integratedterminals-26.1.2-neoforge</artifactId>
-      <version>1.7.1-801</version>
+      <version>1.8.0-821</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedscripting</groupId>
       <artifactId>integratedscripting-26.1.2-neoforge</artifactId>
-      <version>1.0.27-450</version>
+      <version>1.0.27-452</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedrest</groupId>
       <artifactId>integratedrest-26.1.2-neoforge</artifactId>
-      <version>1.1.15-206</version>
+      <version>1.1.15-208</version>
     </dependency>
 
     <dependency>
       <groupId>org.cyclops.integratednbt</groupId>
       <artifactId>integratednbt-26.1.2-neoforge</artifactId>
-      <version>1.6.3-61</version>
+      <version>1.6.3-64</version>
     </dependency>
     
     <!--><dependency>
@@ -124,7 +124,7 @@
     <dependency>
       <groupId>org.cyclops.evilcraft</groupId>
       <artifactId>evilcraft-26.1.2-neoforge</artifactId>
-      <version>1.2.102-1022</version>
+      <version>1.2.103-1049</version>
     </dependency>
 
     <dependency>

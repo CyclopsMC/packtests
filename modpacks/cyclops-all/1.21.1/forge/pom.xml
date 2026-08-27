@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-1.21.1-forge</artifactId>
-      <version>1.29.2-1063</version>
+      <version>1.29.3-1080</version>
     </dependency>
 
     <dependency>
@@ -27,7 +27,7 @@
     <dependency>
       <groupId>org.cyclops.structuredcrafting</groupId>
       <artifactId>structuredcrafting-1.21.1-forge</artifactId>
-      <version>0.2.13-218</version>
+      <version>0.2.14-224</version>
     </dependency>
   
     <dependency>
@@ -51,7 +51,7 @@
     <dependency>
       <groupId>org.cyclops.colossalchests</groupId>
       <artifactId>colossalchests-1.21.1-forge</artifactId>
-      <version>1.8.14-266</version>
+      <version>1.9.0-285</version>
     </dependency>
     
     <dependency>
