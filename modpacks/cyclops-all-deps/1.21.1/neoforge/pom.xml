@@ -200,7 +200,7 @@
     <dependency>
       <groupId>com.cobblemon</groupId>
       <artifactId>mod</artifactId>
-      <version>1.7.3+1.21.1</version>
+      <version>1.8.0+1.21.1</version>
     </dependency>
     
     <!-- Integrated Mekanism deps: end -->
