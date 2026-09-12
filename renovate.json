@@ -10,6 +10,7 @@
       "token": "{{ secrets.RENOVATE_GITHUB_COM_TOKEN }}"
     },
     {
+      "description": "Backstop only. The registryUrls rules below are what actually keeps Central out of the lookup path, since the Maven datasource raises an ExternalHostError on a Central 429 regardless of these flags.",
       "matchHost": "repo.maven.apache.org",
       "abortOnError": false,
       "abortIgnoreStatusCodes": [429]
