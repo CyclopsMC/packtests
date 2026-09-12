@@ -8,6 +8,11 @@
     {
       "matchHost": "https://maven.pkg.github.com/CyclopsMC/packages",
       "token": "{{ secrets.RENOVATE_GITHUB_COM_TOKEN }}"
+    },
+    {
+      "matchHost": "repo.maven.apache.org",
+      "abortOnError": false,
+      "abortIgnoreStatusCodes": [429]
     }
   ],
   "packageRules": [
@@ -22,9 +27,77 @@
       "automergeType": "branch"
     },
     {
+      "description": "Cyclops mods are only published to our GitHub Packages registry",
       "matchManagers": ["maven"],
-      "matchPackagePrefixes": ["org.cyclops."],
+      "matchPackageNames": ["org.cyclops.{/,}**"],
+      "registryUrls": ["https://maven.pkg.github.com/CyclopsMC/packages"]
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["org.cyclops.{/,}**"],
       "groupName": "Cyclops packages"
+    },
+    {
+      "description": "CurseForge artifacts only exist on CurseMaven",
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["curse.maven:{/,}**"],
+      "registryUrls": ["https://www.cursemaven.com/"]
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["com.cobblemon:{/,}**"],
+      "registryUrls": ["https://artefacts.cobblemon.com/releases/"]
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": [
+        "mezz.jei:{/,}**",
+        "com.almostreliable.mods:{/,}**"
+      ],
+      "registryUrls": ["https://maven.blamejared.com/"]
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": [
+        "me.shedaniel:{/,}**",
+        "me.shedaniel.{/,}**",
+        "dev.architectury:{/,}**"
+      ],
+      "registryUrls": ["https://maven.shedaniel.me/"]
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["dev.emi:{/,}**"],
+      "registryUrls": ["https://maven.terraformersmc.com/"]
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["mcjty.theoneprobe:{/,}**"],
+      "registryUrls": ["https://maven.k-4u.nl/"]
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["mekanism:{/,}**"],
+      "registryUrls": ["https://modmaven.dev/"]
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["top.theillusivec4.curios:{/,}**"],
+      "registryUrls": ["https://maven.theillusivec4.top/"]
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["thedarkcolour:{/,}**"],
+      "registryUrls": ["https://thedarkcolour.github.io/KotlinForForge/"]
+    },
+    {
+      "description": "Only registry in settings.xml serving up-to-date versions of these",
+      "matchManagers": ["maven"],
+      "matchPackageNames": [
+        "com.github.glitchfiend:{/,}**",
+        "com.refinedmods.refinedstorage:{/,}**"
+      ],
+      "registryUrls": ["https://maven.creeperhost.net/"]
     },
     {
       "matchManagers": ["maven"],
