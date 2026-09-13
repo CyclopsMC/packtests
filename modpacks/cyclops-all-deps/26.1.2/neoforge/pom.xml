@@ -125,7 +125,7 @@
     <dependency>
       <groupId>curse.maven</groupId>
       <artifactId>jade-324717</artifactId>
-      <version>7903350</version>
+      <version>8857417</version>
     </dependency>
     
     <!-- Integrated Dynamics deps: end -->
