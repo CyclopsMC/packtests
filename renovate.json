@@ -123,6 +123,12 @@
       "matchPackageNames": ["com.github.glitchfiend:TerraBlender-neoforge"],
       "matchFileNames": ["modpacks/**/26.1*/**/pom.xml"],
       "allowedVersions": "/^26\\.1\\./"
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["mcjty.theoneprobe:theoneprobe"],
+      "matchFileNames": ["modpacks/**/26.1*/**/pom.xml"],
+      "allowedVersions": "/^26\\.1\\./"
     }
   ],
   "github-actions": {

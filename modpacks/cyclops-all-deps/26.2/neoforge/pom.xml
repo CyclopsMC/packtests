@@ -80,11 +80,11 @@
       <version>30.31.0.206</version>
     </dependency>
     
-    <!--><dependency>
+    <dependency>
       <groupId>mcjty.theoneprobe</groupId>
       <artifactId>theoneprobe</artifactId>
-      <version>1.21_neo-12.0.8-7</version>
-    </dependency>-->
+      <version>26.2_neo-15.0.0-1</version>
+    </dependency>
     
     <dependency>
       <groupId>com.github.glitchfiend</groupId>
