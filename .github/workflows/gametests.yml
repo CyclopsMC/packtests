@@ -90,12 +90,7 @@ jobs:
           version=$(.github/scripts/resolve-loader-version.sh ${{ matrix.loader }} ${{ matrix.mc }})
           echo "version=$version" >> "$GITHUB_OUTPUT"
           echo "${{ matrix.loader }} ${{ matrix.mc }}: **$version**" >> "$GITHUB_STEP_SUMMARY"
-      # mc-runtime-test keys its own ~/.minecraft cache on the Minecraft version only and skips the
-      # loader install on a hit, so it keeps running the loader build that was current when the
-      # cache was created. Caching here with the resolved loader build in the key makes a new
-      # loader release invalidate the cache automatically. No restore-keys on purpose: a partial
-      # hit would still skip the loader install. Bump the v1 suffix to force a reset.
-      # mc-server-test reinstalls the loader on every run and its cache is empty, so it gets none.
+      # Cache manually and take into account loader version.
       - name: 'Load Minecraft from cache'
         if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric')
         uses: actions/cache@v6
