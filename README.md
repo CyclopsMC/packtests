@@ -28,6 +28,14 @@ Not all packs may be defined for all loaders and minecraft versions.
 All packs are started in both a client and server environment, using the [mc-runtime-test](https://github.com/headlesshq/mc-runtime-test) and [mc-server-test](https://github.com/headlesshq/mc-server-test) GitHub actions.
 Additionally, [game tests](https://minecraft.wiki/w/GameTest) are executed.
 
+### Caching
+
+Mod jars are cached per modpack `pom.xml` hash.
+The client Minecraft installation (`~/.minecraft`) is cached per Minecraft version, loader, and latest loader build
+(resolved by `.github/scripts/resolve-loader-version.sh`), so a new loader release automatically invalidates it.
+To force a reset, bump the `hmc-v1` prefix of the cache key in `.github/workflows/gametests.yml`.
+Servers are reinstalled on every run and are not cached.
+
 ### Automatic dependency updates
 
 Using [Renovate](https://www.mend.io/renovate/), versions of all mods are always automatically updated to their latest version.

@@ -83,6 +83,25 @@ jobs:
         env:
           GITHUB_USER: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: 'Resolve latest loader version'
+        if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric')
+        id: loader
+        run: |
+          version=$(.github/scripts/resolve-loader-version.sh ${{ matrix.loader }} ${{ matrix.mc }})
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "${{ matrix.loader }} ${{ matrix.mc }}: **$version**" >> "$GITHUB_STEP_SUMMARY"
+      # mc-runtime-test keys its own ~/.minecraft cache on the Minecraft version only and skips the
+      # loader install on a hit, so it keeps running the loader build that was current when the
+      # cache was created. Caching here with the resolved loader build in the key makes a new
+      # loader release invalidate the cache automatically. No restore-keys on purpose: a partial
+      # hit would still skip the loader install. Bump the v1 suffix to force a reset.
+      # mc-server-test reinstalls the loader on every run and its cache is empty, so it gets none.
+      - name: 'Load Minecraft from cache'
+        if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric')
+        uses: actions/cache@v6
+        with:
+          path: ~/.minecraft
+          key: hmc-v1-${{ runner.os }}-${{ matrix.mc }}-${{ matrix.loader }}-${{ steps.loader.outputs.version }}
       - name: 'Test in runtime client'
         if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric') # This does not work yet on Forge or Fabric
         timeout-minutes: 10
@@ -98,6 +117,7 @@ jobs:
           headlessmc-command: --jvm "-Djava.awt.headless=true -DMcRuntimeGameTestMinExpectedGameTests=1"
           fabric-api: ${{ matrix.fabric-api || 'none' }}
           fabric-gametest-api: ${{ matrix.fabric-gametest-api || 'none' }}
+          cache-mc: false
       - name: 'Test in runtime server'
         if: matrix.env == 'server'
         timeout-minutes: 10
@@ -111,6 +131,7 @@ jobs:
           fabric-api: ${{ matrix.fabric-api || 'none' }}
           fabric-gametest-api: ${{ matrix.fabric-gametest-api || 'none' }}
           test-file: ${{ matrix.mc-server-test-file || './mc-server-test.json' }}
+          cache-mc: false
       - uses: actions/upload-artifact@v7
         if: matrix.env == 'client'
         with:
