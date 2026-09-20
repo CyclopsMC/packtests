@@ -21,7 +21,7 @@ jobs:
         mc:
           - 1.21.1
           - 26.1.2
-          - 26.2
+          - 26.3
         loader:
           - neoforge
           - forge
@@ -37,10 +37,10 @@ jobs:
             loader: fabric
             fabric-api: 0.146.1 # https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20&showAlphaFiles=show
             fabric-gametest-api: 4.0.13+00a1fba64c # https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-gametest-api-v1/
-          - mc: 26.2
+          - mc: 26.3
             loader: fabric
-            fabric-api: 0.153.0 # https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20&showAlphaFiles=show
-            fabric-gametest-api: 4.0.19+4a7fa081f7 # https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-gametest-api-v1/
+            fabric-api: 0.161.0 # https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20&showAlphaFiles=show
+            fabric-gametest-api: 4.0.32+3434d6d95d # https://maven.fabricmc.net/net/fabricmc/fabric-api/fabric-gametest-api-v1/
         exclude:
           - modpack: cyclops-id # ID does not exist for Forge
             loader: forge
@@ -50,6 +50,9 @@ jobs:
             loader: forge
           - modpack: cyclops-all-deps # No deps are relevant for Fabric mods
             loader: fabric
+          - env: client # Disabled until mc-runtime-test ships a 26.3 build
+            loader: neoforge
+            mc: 26.3
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
@@ -83,6 +86,11 @@ jobs:
         env:
           GITHUB_USER: ${{ github.actor }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: 'Remove game test datapacks'
+        # They define Integrated Crafting recipes, and Integrated Crafting only exists on NeoForge.
+        # Older versions skipped the unknown recipe type, but 26.3 fails registry loading over it.
+        if: matrix.loader != 'neoforge'
+        run: rm -rf run/world/datapacks
       - name: 'Resolve latest loader version'
         if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric')
         id: loader
