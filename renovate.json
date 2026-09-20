@@ -4,6 +4,9 @@
     "config:recommended"
   ],
   "enabledManagers": ["maven", "github-actions"],
+  "ignorePaths": [
+    "modpacks/**/26.2/**"
+  ],
   "hostRules": [
     {
       "matchHost": "https://maven.pkg.github.com/CyclopsMC/packages",
@@ -111,7 +114,7 @@
       "matchPackageNames": ["com.refinedmods.refinedstorage:refinedstorage-neoforge"],
       "matchFileNames": [
         "modpacks/**/26.1*/**/pom.xml",
-        "modpacks/**/26.2*/**/pom.xml"
+        "modpacks/**/26.3*/**/pom.xml"
       ],
       "allowedVersions": "/^3\\./"
     },
@@ -130,8 +133,8 @@
     {
       "matchManagers": ["maven"],
       "matchPackageNames": ["com.github.glitchfiend:TerraBlender-neoforge"],
-      "matchFileNames": ["modpacks/**/26.2*/**/pom.xml"],
-      "allowedVersions": "/^26\\.2[-.]/"
+      "matchFileNames": ["modpacks/**/26.3*/**/pom.xml"],
+      "allowedVersions": "/^26\\.3[-.]/"
     },
     {
       "matchManagers": ["maven"],
@@ -148,11 +151,11 @@
     {
       "matchManagers": ["maven"],
       "matchPackageNames": ["mcjty.theoneprobe:theoneprobe"],
-      "matchFileNames": ["modpacks/**/26.2*/**/pom.xml"],
-      "allowedVersions": "/^26\\.2_/"
+      "matchFileNames": ["modpacks/**/26.3*/**/pom.xml"],
+      "allowedVersions": "/^26\\.3_/"
     },
     {
-      "description": "Architectury majors map to MC versions: 13 -> 1.21.1, 20 -> 26.1.2, 21 -> 26.2",
+      "description": "Architectury majors map to MC versions: 13 -> 1.21.1, 20 -> 26.1.2, 22 -> 26.3",
       "matchManagers": ["maven"],
       "matchPackageNames": ["dev.architectury:architectury-neoforge"],
       "matchFileNames": ["modpacks/**/1.21.1/**/pom.xml"],
@@ -167,8 +170,8 @@
     {
       "matchManagers": ["maven"],
       "matchPackageNames": ["dev.architectury:architectury-neoforge"],
-      "matchFileNames": ["modpacks/**/26.2*/**/pom.xml"],
-      "allowedVersions": "/^21\\./"
+      "matchFileNames": ["modpacks/**/26.3*/**/pom.xml"],
+      "allowedVersions": "/^22\\./"
     }
   ],
   "github-actions": {

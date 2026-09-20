@@ -23,6 +23,9 @@ Not all packs may be defined for all loaders and minecraft versions.
 - `cyclops-all-deps`: All mods developed under the Cyclops organization, including their optional dependencies.
 - `cyclops-id`: All Integrated Dynamics-related mods developed under the Cyclops organization.
 
+Packs for superseded Minecraft versions are kept for reference, but are no longer tested in CI
+and are excluded from automatic dependency updates.
+
 ### Testing
 
 All packs are started in both a client and server environment, using the [mc-runtime-test](https://github.com/headlesshq/mc-runtime-test) and [mc-server-test](https://github.com/headlesshq/mc-server-test) GitHub actions.
