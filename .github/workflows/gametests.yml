@@ -50,6 +50,9 @@ jobs:
             loader: forge
           - modpack: cyclops-all-deps # No deps are relevant for Fabric mods
             loader: fabric
+          - env: client # Disabled until mc-runtime-test ships a 26.3 build
+            loader: neoforge
+            mc: 26.3
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
