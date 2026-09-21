@@ -50,9 +50,6 @@ jobs:
             loader: forge
           - modpack: cyclops-all-deps # No deps are relevant for Fabric mods
             loader: fabric
-          - env: client # Disabled until mc-runtime-test ships a 26.3 build
-            loader: neoforge
-            mc: 26.3
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
@@ -106,7 +103,8 @@ jobs:
           path: ~/.minecraft
           key: hmc-v1-${{ runner.os }}-${{ matrix.mc }}-${{ matrix.loader }}-${{ steps.loader.outputs.version }}
       - name: 'Test in runtime client'
-        if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric') # This does not work yet on Forge or Fabric
+        # Forge and Fabric do not work yet, and mc-runtime-test has no 26.3 build.
+        if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric') && matrix.mc != '26.3'
         timeout-minutes: 10
         uses: headlesshq/mc-runtime-test@4.5.1
         env:
