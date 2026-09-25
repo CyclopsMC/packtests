@@ -153,7 +153,7 @@
     <dependency>
       <groupId>top.theillusivec4.curios</groupId>
       <artifactId>curios-neoforge</artifactId>
-      <version>15.0.0+26.1.2</version>
+      <version>17.0.0-beta+26.3</version>
     </dependency>
 
     <!--><dependency>
