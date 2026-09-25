@@ -90,7 +90,7 @@
     <dependency>
       <groupId>com.github.glitchfiend</groupId>
       <artifactId>TerraBlender-neoforge</artifactId>
-      <version>26.3-26.3.0.0.0</version>
+      <version>26.3-26.3.0.0.7</version>
     </dependency>
 
     <!--<dependency> While we have support, the gametest "evilcraft:gametestsbloodinfuser_testbloodinfuseremptyfluidcontainercreativeblooddrop" fails for some reason when architectury is present. They are probably breaking things...
