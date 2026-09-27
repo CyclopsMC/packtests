@@ -172,6 +172,25 @@
       "matchPackageNames": ["dev.architectury:architectury-neoforge"],
       "matchFileNames": ["modpacks/**/26.3*/**/pom.xml"],
       "allowedVersions": "/^22\\./"
+    },
+    {
+      "description": "Curios versions end with +<mc version>",
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["top.theillusivec4.curios:curios-neoforge"],
+      "matchFileNames": ["modpacks/**/1.21.1/**/pom.xml"],
+      "allowedVersions": "/\\+1\\.21\\.1$/"
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["top.theillusivec4.curios:curios-neoforge"],
+      "matchFileNames": ["modpacks/**/26.1*/**/pom.xml"],
+      "allowedVersions": "/\\+26\\.1(\\.\\d+)?$/"
+    },
+    {
+      "matchManagers": ["maven"],
+      "matchPackageNames": ["top.theillusivec4.curios:curios-neoforge"],
+      "matchFileNames": ["modpacks/**/26.3*/**/pom.xml"],
+      "allowedVersions": "/\\+26\\.3(\\.\\d+)?$/"
     }
   ],
   "github-actions": {
