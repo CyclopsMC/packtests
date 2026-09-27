@@ -87,11 +87,12 @@
       <version>26.2_neo-15.0.1-2</version>
     </dependency>-->
     
+    <!-- Crashes on NeoForge 26.3.0.20-beta+ (still uses the removed DataPackRegistryEvent$NewRegistry), latest is 26.3-26.3.0.0.7
     <dependency>
       <groupId>com.github.glitchfiend</groupId>
       <artifactId>TerraBlender-neoforge</artifactId>
       <version>26.3-26.3.0.0.0</version>
-    </dependency>
+    </dependency>-->
 
     <!--<dependency> While we have support, the gametest "evilcraft:gametestsbloodinfuser_testbloodinfuseremptyfluidcontainercreativeblooddrop" fails for some reason when architectury is present. They are probably breaking things...
       <groupId>me.shedaniel</groupId>
