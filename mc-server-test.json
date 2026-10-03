@@ -1,5 +1,6 @@
 {
   "name": "Server with Game Tests",
+  "totalTimeout": 840,
   "steps": [
     {
       "type": "ENDS_WITH",

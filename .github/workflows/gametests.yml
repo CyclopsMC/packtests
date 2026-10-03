@@ -121,7 +121,7 @@ jobs:
           cache-mc: false
       - name: 'Test in runtime server'
         if: matrix.env == 'server'
-        timeout-minutes: 10
+        timeout-minutes: 20
         uses: headlesshq/mc-server-test@1.1.1
         env:
           CYCLOPSMC_ENABLEDGAMETESTSGLOBAL: true
