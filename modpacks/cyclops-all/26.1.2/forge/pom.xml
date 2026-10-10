@@ -49,9 +49,9 @@
     </dependency>
     
     <dependency>
-      <groupId>org.cyclops.colossalchests</groupId>
-      <artifactId>colossalchests-26.1.2-forge</artifactId>
-      <version>1.9.1-302</version>
+      <groupId>org.cyclops.colossalchests2</groupId>
+      <artifactId>colossalchests2-26.1.2-forge</artifactId>
+      <version>1.0.0-46</version>
     </dependency>
     
     <dependency>
