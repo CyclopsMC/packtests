@@ -84,6 +84,13 @@
       <groupId>mezz.jei</groupId>
       <artifactId>jei-1.21.1-neoforge</artifactId>
       <version>19.57.0.451</version>
+      <!-- Its modules are already shaded or jar-in-jar'd, and are not mods themselves. -->
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     
     <dependency>
@@ -138,7 +145,7 @@
     <dependency>
       <groupId>curse.maven</groupId>
       <artifactId>create-aeronautics-676721</artifactId>
-      <version>8240058</version>
+      <version>8763471</version>
     </dependency>
 
     <dependency>
@@ -201,11 +208,26 @@
       <groupId>thedarkcolour</groupId>
       <artifactId>kotlinforforge-neoforge</artifactId>
       <version>5.12.0</version>
+      <!-- Kotlin libs are already jar-in-jar'd, and are not mods themselves. -->
+      <exclusions>
+        <exclusion>
+          <groupId>org.jetbrains</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.jetbrains.kotlin</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.jetbrains.kotlinx</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <dependency>
       <groupId>com.cobblemon</groupId>
-      <artifactId>mod</artifactId>
+      <artifactId>neoforge</artifactId>
       <version>1.8.1+1.21.1</version>
     </dependency>
     
@@ -254,6 +276,13 @@
       <groupId>com.refinedmods.refinedstorage</groupId>
       <artifactId>refinedstorage-neoforge</artifactId>
       <version>2.0.9</version>
+      <!-- Its transitive deps (jsr305, jspecify) are not mods and trigger a loading warning screen. -->
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   
   </dependencies>

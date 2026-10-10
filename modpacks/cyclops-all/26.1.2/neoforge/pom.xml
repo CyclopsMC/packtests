@@ -131,6 +131,13 @@
       <groupId>com.refinedmods.refinedstorage</groupId>
       <artifactId>refinedstorage-neoforge</artifactId>
       <version>3.2.1</version>
+      <!-- Its transitive deps (jsr305, jspecify) are not mods and trigger a loading warning screen. -->
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
 </project>

@@ -78,6 +78,13 @@
       <groupId>mezz.jei</groupId>
       <artifactId>jei-26.1.2-neoforge</artifactId>
       <version>29.43.0.107</version>
+      <!-- Its modules are already shaded or jar-in-jar'd, and are not mods themselves. -->
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     
     <dependency>
@@ -211,6 +218,13 @@
       <groupId>com.refinedmods.refinedstorage</groupId>
       <artifactId>refinedstorage-neoforge</artifactId>
       <version>3.2.1</version>
+      <!-- Its transitive deps (jsr305, jspecify) are not mods and trigger a loading warning screen. -->
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   
   </dependencies>
