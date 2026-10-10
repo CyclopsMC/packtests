@@ -55,12 +55,6 @@
     </dependency>
     
     <dependency>
-      <groupId>org.cyclops.colossalchests</groupId>
-      <artifactId>colossalchests-26.1.2-neoforge</artifactId>
-      <version>1.9.1-302</version>
-    </dependency>
-    
-    <dependency>
       <groupId>org.cyclops.colossalchests2</groupId>
       <artifactId>colossalchests2-26.1.2-neoforge</artifactId>
       <version>1.0.0-28</version>
