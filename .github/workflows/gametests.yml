@@ -29,6 +29,8 @@ jobs:
         include:
           - mc: 1.21.1
             mc-server-test-file: none # All loaders are finicky with gametests in 1.21 production, so don't run them.
+            # mc-runtime-test's 1.21 runner never sets a structure spawner, so every batch has 0 tests and hangs.
+            client-gametests: 'false'
           - mc: 1.21.1
             loader: fabric
             fabric-api: 0.116.7 # https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20&showAlphaFiles=show
@@ -115,7 +117,7 @@ jobs:
           regex: .*${{ matrix.loader }}.*
           mc-runtime-test: ${{ matrix.loader == 'forge' && 'lexforge' || matrix.loader }}
           java: ${{ env.java_version }}
-          headlessmc-command: --jvm "-Djava.awt.headless=true -DMcRuntimeGameTestMinExpectedGameTests=1"
+          headlessmc-command: --jvm "-Djava.awt.headless=true -DMcRuntimeGameTest=${{ matrix.client-gametests || 'true' }} -DMcRuntimeGameTestMinExpectedGameTests=1"
           fabric-api: ${{ matrix.fabric-api || 'none' }}
           fabric-gametest-api: ${{ matrix.fabric-gametest-api || 'none' }}
           cache-mc: false
@@ -129,6 +131,10 @@ jobs:
           fi
           if grep -n "RuntimeException: Error Screen" run/logs/latest.log; then
             echo "::error::An error screen was shown in the runtime client, so no game tests were run."
+            exit 1
+          fi
+          if ! grep -q "Successfully finished" run/logs/latest.log; then
+            echo "::error::The runtime client did not finish successfully."
             exit 1
           fi
       - name: 'Test in runtime server'
