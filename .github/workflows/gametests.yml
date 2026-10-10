@@ -119,6 +119,18 @@ jobs:
           fabric-api: ${{ matrix.fabric-api || 'none' }}
           fabric-gametest-api: ${{ matrix.fabric-gametest-api || 'none' }}
           cache-mc: false
+      - name: 'Check runtime client for error screens'
+        # mc-runtime-test exits with code 0 when an error screen (e.g. mod loading warnings) aborts the run.
+        if: always() && matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric') && matrix.mc != '26.3'
+        run: |
+          if [ ! -f run/logs/latest.log ]; then
+            echo "::error::Runtime client log run/logs/latest.log not found."
+            exit 1
+          fi
+          if grep -n "RuntimeException: Error Screen" run/logs/latest.log; then
+            echo "::error::An error screen was shown in the runtime client, so no game tests were run."
+            exit 1
+          fi
       - name: 'Test in runtime server'
         if: matrix.env == 'server'
         timeout-minutes: 20
