@@ -34,6 +34,9 @@ jobs:
           - mc: 26.1.2
             # mc-runtime-test's 26.1 runner only finds tests near the player, so it finds none.
             client-gametests: 'false'
+          - mc: 26.3
+            # mc-runtime-test's 26.3 runner finds no tests either.
+            client-gametests: 'false'
           - mc: 1.21.1
             loader: fabric
             fabric-api: 0.116.7 # https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20&showAlphaFiles=show
