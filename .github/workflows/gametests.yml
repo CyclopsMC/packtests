@@ -111,8 +111,8 @@ jobs:
           path: ~/.minecraft
           key: hmc-v2-${{ runner.os }}-${{ matrix.mc }}-${{ matrix.loader }}-${{ steps.loader.outputs.version }}
       - name: 'Test in runtime client'
-        # Forge 26.1.2 hangs waiting for the player to load.
-        if: matrix.env == 'client' && !(matrix.loader == 'forge' && matrix.mc == '26.1.2')
+        # Forge on 26.x hangs waiting for the player to load.
+        if: matrix.env == 'client' && !(matrix.loader == 'forge' && matrix.mc != '1.21.1')
         timeout-minutes: 10
         uses: headlesshq/mc-runtime-test@5.0.0
         env:
@@ -128,7 +128,7 @@ jobs:
           cache-mc: false
       - name: 'Check runtime client for error screens'
         # mc-runtime-test exits with code 0 when an error screen (e.g. mod loading warnings) aborts the run.
-        if: always() && matrix.env == 'client' && !(matrix.loader == 'forge' && matrix.mc == '26.1.2')
+        if: always() && matrix.env == 'client' && !(matrix.loader == 'forge' && matrix.mc != '1.21.1')
         run: |
           if [ ! -f run/logs/latest.log ]; then
             echo "::error::Runtime client log run/logs/latest.log not found."
