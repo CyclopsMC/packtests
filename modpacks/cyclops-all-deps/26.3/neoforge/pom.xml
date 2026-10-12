@@ -78,6 +78,13 @@
       <groupId>mezz.jei</groupId>
       <artifactId>jei-26.3-neoforge</artifactId>
       <version>31.10.0.63</version>
+      <!-- Its modules are already shaded or jar-in-jar'd, and are not mods themselves. -->
+      <exclusions>
+        <exclusion>
+          <groupId>*</groupId>
+          <artifactId>*</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     
     <!-- No 26.3 build yet, latest is 26.2_neo-15.0.1-2

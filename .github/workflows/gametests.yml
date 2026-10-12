@@ -34,6 +34,9 @@ jobs:
           - mc: 26.1.2
             # mc-runtime-test's 26.1 runner only finds tests near the player, so it finds none.
             client-gametests: 'false'
+          - mc: 26.3
+            # mc-runtime-test's 26.3 runner finds no tests either.
+            client-gametests: 'false'
           - mc: 1.21.1
             loader: fabric
             fabric-api: 0.116.7 # https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all?page=1&pageSize=20&showAlphaFiles=show
@@ -94,7 +97,7 @@ jobs:
         if: matrix.loader != 'neoforge'
         run: rm -rf run/world/datapacks
       - name: 'Resolve latest loader version'
-        if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric')
+        if: matrix.env == 'client'
         id: loader
         run: |
           version=$(.github/scripts/resolve-loader-version.sh ${{ matrix.loader }} ${{ matrix.mc }})
@@ -102,32 +105,30 @@ jobs:
           echo "${{ matrix.loader }} ${{ matrix.mc }}: **$version**" >> "$GITHUB_STEP_SUMMARY"
       # Cache manually and take into account loader version.
       - name: 'Load Minecraft from cache'
-        if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric')
+        if: matrix.env == 'client'
         uses: actions/cache@v6
         with:
           path: ~/.minecraft
-          key: hmc-v1-${{ runner.os }}-${{ matrix.mc }}-${{ matrix.loader }}-${{ steps.loader.outputs.version }}
+          key: hmc-v2-${{ runner.os }}-${{ matrix.mc }}-${{ matrix.loader }}-${{ steps.loader.outputs.version }}
       - name: 'Test in runtime client'
-        # Forge and Fabric do not work yet, and mc-runtime-test has no 26.3 build.
-        if: matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric') && matrix.mc != '26.3'
+        # Forge on 26.x hangs waiting for the player to load.
+        if: matrix.env == 'client' && !(matrix.loader == 'forge' && matrix.mc != '1.21.1')
         timeout-minutes: 10
-        uses: headlesshq/mc-runtime-test@4.5.2
+        uses: headlesshq/mc-runtime-test@5.0.0
         env:
           CYCLOPSMC_ENABLEDGAMETESTSGLOBAL: true
         with:
           mc: ${{ matrix.mc }}
           modloader: ${{ matrix.loader }}
-          regex: .*${{ matrix.loader }}.*
-          mc-runtime-test: ${{ matrix.loader == 'forge' && 'lexforge' || matrix.loader }}
+          mc-runtime-test: ${{ matrix.loader }}
           java: ${{ env.java_version }}
-          # HeadlessMC re-joins its CLI args with spaces, so the inner quotes keep the JVM args together.
-          headlessmc-command: --jvm '"-Djava.awt.headless=true -DMcRuntimeGameTest=${{ matrix.client-gametests || 'true' }} -DMcRuntimeGameTestMinExpectedGameTests=1"'
+          headlessmc-command: --jvm "-Djava.awt.headless=true -DMcRuntimeGameTest=${{ matrix.client-gametests || 'true' }} -DMcRuntimeGameTestMinExpectedGameTests=1"
           fabric-api: ${{ matrix.fabric-api || 'none' }}
           fabric-gametest-api: ${{ matrix.fabric-gametest-api || 'none' }}
           cache-mc: false
       - name: 'Check runtime client for error screens'
         # mc-runtime-test exits with code 0 when an error screen (e.g. mod loading warnings) aborts the run.
-        if: always() && matrix.env == 'client' && (matrix.loader != 'forge' && matrix.loader != 'fabric') && matrix.mc != '26.3'
+        if: always() && matrix.env == 'client' && !(matrix.loader == 'forge' && matrix.mc != '1.21.1')
         run: |
           if [ ! -f run/logs/latest.log ]; then
             echo "::error::Runtime client log run/logs/latest.log not found."
