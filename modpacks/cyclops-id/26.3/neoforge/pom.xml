@@ -33,7 +33,7 @@
     <dependency>
       <groupId>org.cyclops.integratedtunnels</groupId>
       <artifactId>integratedtunnels-26.3-neoforge</artifactId>
-      <version>1.9.6-813</version>
+      <version>1.9.6-821</version>
     </dependency>
     
     <dependency>
