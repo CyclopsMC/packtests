@@ -75,7 +75,7 @@
     <dependency>
       <groupId>org.cyclops.integrateddynamics</groupId>
       <artifactId>integrateddynamics-1.21.1-neoforge</artifactId>
-      <version>1.38.1-2291</version>
+      <version>1.38.1-2352</version>
     </dependency>
     
     <dependency>
@@ -99,7 +99,7 @@
     <dependency>
       <groupId>org.cyclops.integratedscripting</groupId>
       <artifactId>integratedscripting-1.21.1-neoforge</artifactId>
-      <version>1.0.27-699</version>
+      <version>1.0.27-708</version>
     </dependency>
     
     <dependency>
@@ -130,7 +130,7 @@
     <dependency>
       <groupId>org.cyclops.evilcraft</groupId>
       <artifactId>evilcraft-1.21.1-neoforge</artifactId>
-      <version>1.2.99-1163</version>
+      <version>1.2.99-1182</version>
     </dependency>
 
     <dependency>
