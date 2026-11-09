@@ -69,13 +69,13 @@
     <dependency>
       <groupId>org.cyclops.integrateddynamics</groupId>
       <artifactId>integrateddynamics-26.1.2-neoforge</artifactId>
-      <version>1.36.3-2387</version>
+      <version>1.36.3-2427</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedtunnels</groupId>
       <artifactId>integratedtunnels-26.1.2-neoforge</artifactId>
-      <version>1.13.2-820</version>
+      <version>1.13.3-831</version>
     </dependency>
     
     <dependency>
@@ -93,7 +93,7 @@
     <dependency>
       <groupId>org.cyclops.integratedscripting</groupId>
       <artifactId>integratedscripting-26.1.2-neoforge</artifactId>
-      <version>1.1.0-727</version>
+      <version>1.1.1-734</version>
     </dependency>
     
     <dependency>
@@ -124,7 +124,7 @@
     <dependency>
       <groupId>org.cyclops.evilcraft</groupId>
       <artifactId>evilcraft-26.1.2-neoforge</artifactId>
-      <version>1.2.109-1189</version>
+      <version>1.2.110-1204</version>
     </dependency>
 
     <dependency>
