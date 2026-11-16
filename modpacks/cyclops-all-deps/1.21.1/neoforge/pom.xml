@@ -207,7 +207,7 @@
     <dependency>
       <groupId>thedarkcolour</groupId>
       <artifactId>kotlinforforge-neoforge</artifactId>
-      <version>5.12.0</version>
+      <version>5.13.0</version>
       <!-- Kotlin libs are already jar-in-jar'd, and are not mods themselves. -->
       <exclusions>
         <exclusion>
