@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-26.1.2-neoforge</artifactId>
-      <version>1.31.5-1255</version>
+      <version>1.31.6-1256</version>
     </dependency>
 
     <dependency>
@@ -81,13 +81,13 @@
     <dependency>
       <groupId>org.cyclops.integratedcrafting</groupId>
       <artifactId>integratedcrafting-26.1.2-neoforge</artifactId>
-      <version>1.8.1-882</version>
+      <version>1.8.2-897</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedterminals</groupId>
       <artifactId>integratedterminals-26.1.2-neoforge</artifactId>
-      <version>1.11.2-1110</version>
+      <version>1.11.3-1123</version>
     </dependency>
     
     <dependency>

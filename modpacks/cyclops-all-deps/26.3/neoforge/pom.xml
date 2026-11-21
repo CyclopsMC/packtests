@@ -15,7 +15,7 @@
     <dependency>
       <groupId>org.cyclops.cyclopscore</groupId>
       <artifactId>cyclopscore-26.3-neoforge</artifactId>
-      <version>1.30.0-1250</version>
+      <version>1.30.0-1258</version>
     </dependency>
 
     <dependency>
@@ -63,7 +63,7 @@
     <dependency>
       <groupId>org.cyclops.iconexporter</groupId>
       <artifactId>iconexporter-26.3-neoforge</artifactId>
-      <version>1.4.2-234</version>
+      <version>1.4.2-236</version>
     </dependency>
     
     <dependency>
@@ -154,13 +154,13 @@
     <dependency>
       <groupId>org.cyclops.integratedcrafting</groupId>
       <artifactId>integratedcrafting-26.3-neoforge</artifactId>
-      <version>1.4.7-883</version>
+      <version>1.4.7-898</version>
     </dependency>
     
     <dependency>
       <groupId>org.cyclops.integratedterminals</groupId>
       <artifactId>integratedterminals-26.3-neoforge</artifactId>
-      <version>1.7.0-1111</version>
+      <version>1.7.0-1124</version>
     </dependency>
     
     <!-- Integrated Terminals deps: start -->
