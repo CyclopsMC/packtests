@@ -77,11 +77,11 @@
     <dependency>
       <groupId>mezz.jei</groupId>
       <artifactId>jei-26.1.2-neoforge</artifactId>
-      <version>29.53.0.115</version>
-      <!-- Its modules are already shaded or jar-in-jar'd, and are not mods themselves. -->
+      <version>29.54.0.123</version>
+      <!-- Its own modules are already shaded and are not mods themselves. Other deps (e.g. mezz_config) are needed. -->
       <exclusions>
         <exclusion>
-          <groupId>*</groupId>
+          <groupId>mezz.jei</groupId>
           <artifactId>*</artifactId>
         </exclusion>
       </exclusions>
