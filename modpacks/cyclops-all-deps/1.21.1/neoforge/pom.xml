@@ -83,7 +83,7 @@
     <dependency>
       <groupId>mezz.jei</groupId>
       <artifactId>jei-1.21.1-neoforge</artifactId>
-      <version>19.76.1.478</version>
+      <version>19.76.1.481</version>
       <!-- Its own modules are already shaded and are not mods themselves. Other deps (e.g. mezz_config) are needed. -->
       <exclusions>
         <exclusion>
